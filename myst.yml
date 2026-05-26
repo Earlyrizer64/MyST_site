@@ -6,3 +6,7 @@ project:
 
 site:
   template: book-theme
+
+toc: 
+  - file: index.md
+  - file: 06_MD_run_using_py.md
