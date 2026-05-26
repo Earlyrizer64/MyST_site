@@ -21,6 +21,7 @@ jobs:
           environment-name: myst
           create-args: python=3.11 mystmd
 
+      # 🔥 THIS IS THE CRITICAL FIX FOR BASE_URL
       - name: Set BASE_URL
         run: echo "BASE_URL=/MyST_site/" >> $GITHUB_ENV
 
