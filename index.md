@@ -1,8 +1,8 @@
 # Welcome
 
-This is my MyST site.
+This is a test MyST site.
 
-## Test Math
+## Math test
 
 $$
 E = mc^2
