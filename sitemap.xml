@@ -10,4 +10,28 @@
   <url>
     <loc>http://localhost:3000/assignment-4-ex</loc>
   </url>
+  <url>
+    <loc>http://localhost:3000/testing-lite</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jupyter-lite</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jupyter-lite-1</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jupyter-lite-2</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jupyter-lite-3</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jupyter-lite-4</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jupyter-lite-5</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jupyter-lite-6</loc>
+  </url>
 </urlset>
