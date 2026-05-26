@@ -22,10 +22,10 @@ jobs:
 
       - name: Build site
         shell: bash -l {0}
-        run: myst build
+        run: myst build --html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: 
+          publish_dir: _build/html
