@@ -1,9 +1,35 @@
-version: 1
+name: Deploy MyST site
 
-project:
-  title: MyST Site
+on:
+  push:
+    branches: [main]
 
-site:
-  template: book-theme
-  options:
-    base_url: /MyST_site/
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup micromamba
+        uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-name: myst
+          create-args: python=3.11 mystmd
+
+      - name: Set BASE_URL
+        run: echo "BASE_URL=/MyST_site/" >> $GITHUB_ENV
+
+      - name: Build site
+        shell: bash -l {0}
+        run: myst build --html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _build/html
