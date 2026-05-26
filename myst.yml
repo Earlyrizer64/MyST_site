@@ -10,3 +10,4 @@ site:
 toc: 
   - file: index.md
   - file: 06_MD_run_using_py.md
+  - file: Assignment_4_Ex.ipynb
