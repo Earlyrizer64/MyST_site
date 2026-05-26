@@ -10,7 +10,7 @@ project:
   # github:
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
-  template: book
+  template: book-theme
   base_url: /MyST_site/
   # options:
   #   favicon: favicon.ico
