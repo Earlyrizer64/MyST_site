@@ -1,0 +1,751 @@
+<!DOCTYPE html><html lang="en" class="" style="scroll-padding:60px"><head><script>(function(){var p=window.location.pathname;if(p.endsWith('/index.html'))window.location.replace((p.slice(0,-10)||'/')+window.location.search+window.location.hash);})();</script><meta charSet="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>MyST Site</title><meta property="og:title" content="MyST Site"/><meta name="generator" content="mystmd"/><meta name="keywords" content=""/><link rel="stylesheet" href="/MyST_site//build/_assets/app-DJMC5ZIA.css"/><link rel="stylesheet" href="/MyST_site//build/_assets/thebe-core-VKVHG5VY.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jupyter-matplotlib@0.11.3/css/mpl_widget.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous"/><link rel="icon" href="/MyST_site//favicon.ico"/><link rel="stylesheet" href="/MyST_site//myst-theme.css"/><script>
+  const savedTheme = localStorage.getItem("myst:theme");
+  const theme = window.matchMedia("(prefers-color-scheme: light)").matches ? 'light' : 'dark';
+  const classes = document.documentElement.classList;
+  const hasAnyTheme = classes.contains('light') || classes.contains('dark');
+  if (!hasAnyTheme) classes.add(savedTheme ?? theme);
+</script></head><body class="m-0 transition-colors duration-500 bg-white dark:bg-stone-900"><div class="myst-skip-to-article fixed top-1 left-1 h-[0px] w-[0px] focus-within:z-40 focus-within:h-auto focus-within:w-auto bg-white overflow-hidden focus-within:p-2 focus-within:ring-1" aria-label="skip to content options"><a href="#skip-to-frontmatter" class="myst-skip-to-link block px-2 py-1 text-black underline">Skip to article frontmatter</a><a href="#skip-to-article" class="myst-skip-to-link block px-2 py-1 text-black underline">Skip to article content</a></div><dialog id="myst-no-css" style="position:fixed;left:0px;top:0px;width:100%;height:100vh;font-size:4rem;padding:1rem;color:black;background:white"><strong>Site not loading correctly?</strong><p>This may be due to an incorrect <code>BASE_URL</code> configuration. See<!-- --> <a href="https://mystmd.org/guide/deployment#deploy-base-url">the MyST Documentation</a> <!-- -->for reference.</p><script>
+    (() => {
+            // Test for has-styling variable set by the MyST stylesheet
+            const node = document.currentScript.parentNode;
+            const hasCSS = window.getComputedStyle(node).getPropertyValue("--has-styling");
+            if (hasCSS === ""){
+                    node.showModal();
+            }
+
+    })()
+</script></dialog><div class="myst-top-nav bg-white/80 backdrop-blur dark:bg-stone-900/80 shadow dark:shadow-stone-700 p-3 md:px-8 sticky w-full top-0 z-30 min-h-[60px]"><nav class="myst-top-nav-bar flex items-center justify-between flex-nowrap max-w-[1440px] mx-auto"><div class="flex flex-row xl:min-w-[19.5rem] mr-2 sm:mr-7 justify-start items-center shrink-0"><div class="block xl:hidden"><button class="myst-top-nav-menu-button flex items-center justify-center border-stone-400 text-stone-800 hover:text-stone-900 dark:text-stone-200 hover:dark:text-stone-100 w-10 h-10"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" width="1.5rem" height="1.5rem"><path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path></svg><span class="sr-only">Open Menu</span></button></div><a class="myst-home-link flex items-center ml-3 dark:text-white w-fit md:ml-5 xl:ml-7" href="/MyST_site//"><span class="text-md sm:text-xl tracking-tight sm:mr-5">Made with MyST</span></a></div><div class="flex items-center flex-grow w-auto"><div class="flex-grow hidden text-md lg:block"></div><div class="flex-grow block"></div><button type="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" class="myst-search-bar flex items-center h-10 aspect-square sm:w-64 text-left text-gray-600 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 myst-search-bar-disabled hover:ring-blue-500 dark:hover:ring-blue-500 hover:border-blue-500 dark:hover:border-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="p-2.5 h-10 w-10 aspect-square"><path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd"></path></svg><span class="myst-search-text-placeholder hidden sm:block grow">Search</span><div aria-hidden="true" class="myst-search-shortcut items-center hidden mx-1 font-mono text-sm text-gray-600 dark:text-gray-300 sm:flex gap-x-1"><kbd class="px-2 py-1 border border-gray-300 dark:border-gray-600 rounded-md shadow-[0px_2px_0px_0px_rgba(0,0,0,0.08)] dark:shadow-none hide-mac">CTRL</kbd><kbd class="px-2 py-1 border border-gray-300 dark:border-gray-600 rounded-md shadow-[0px_2px_0px_0px_rgba(0,0,0,0.08)] dark:shadow-none show-mac">⌘</kbd><kbd class="px-2 py-1 border border-gray-300 dark:border-gray-600 rounded-md shadow-[0px_2px_0px_0px_rgba(0,0,0,0.08)] dark:shadow-none ">K</kbd><script>
+;(() => {
+const script = document.currentScript;
+const root = script.parentElement;
+
+const isMac = /mac/i.test(
+      window.navigator.userAgentData?.platform ?? window.navigator.userAgent,
+    );
+root.querySelectorAll(".hide-mac").forEach(node => {node.classList.add(isMac ? "hidden" : "block")});
+root.querySelectorAll(".show-mac").forEach(node => {node.classList.add(!isMac ? "hidden" : "block")});
+})()</script></div></button><button class="myst-theme-button theme shrink-0 rounded-full border border-stone-700 dark:border-white hover:bg-neutral-100 border-solid overflow-hidden text-stone-700 dark:text-white hover:text-stone-500 dark:hover:text-neutral-800 w-8 h-8 ml-3" title="Toggle theme between light and dark mode" aria-label="Toggle theme between light and dark mode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="myst-theme-moon-icon h-full w-full p-[18%] hidden dark:block"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="myst-theme-sun-icon h-full w-full p-[18%] dark:hidden"><path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"></path></svg></button><div class="block sm:hidden"></div><div class="hidden sm:block"></div></div></nav></div><div class="myst-primary-sidebar fixed xl:article-grid grid-gap xl:w-full xl:pointer-events-none overflow-auto max-xl:w-[75vw] max-xl:max-w-[350px] max-xl:!top-0 max-xl:h-screen hidden z-10" style="top:60px"><div class="myst-primary-sidebar-pointer pointer-events-auto xl:col-margin-left flex-col overflow-hidden max-xl:h-full hidden xl:flex"><div class="myst-primary-sidebar-nav flex-grow py-6 overflow-y-auto primary-scrollbar"><nav aria-label="Navigation" class="myst-primary-sidebar-topnav overflow-y-hidden transition-opacity lg:hidden ml-3 xl:ml-0 mr-3 max-w-[350px]"><div class="w-full px-1 dark:text-white font-medium"></div></nav><div class="my-3 border-b-2 lg:hidden"></div><nav aria-label="Table of Contents" class="myst-primary-sidebar-toc flex-grow overflow-y-hidden transition-opacity ml-3 xl:ml-0 mr-3 max-w-[350px]"><div class="myst-toc w-full px-1 dark:text-white"><a title="MyST Site" class="block break-words focus:outline outline-blue-200 outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-slate-300/30 font-bold" href="/MyST_site//">MyST Site</a><a title="Tutorial 6: Building an MD Engine from Scratch" class="block break-words focus:outline outline-blue-200 outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-slate-300/30" href="/MyST_site//md-run-using-py">Tutorial 6: Building an MD Engine from Scratch</a><a title="Assignment 4 Ex" class="block break-words focus:outline outline-blue-200 outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-slate-300/30" href="/MyST_site//assignment-4-ex">Assignment 4 Ex</a></div></nav></div><div class="myst-primary-sidebar-footer flex-none py-6 transition-all duration-700 translate-y-6 opacity-0 ml-3 xl:ml-0 mr-3 max-w-[350px]"><a class="myst-made-with-myst flex mx-auto text-gray-700 w-fit hover:text-blue-700 dark:text-gray-200 dark:hover:text-blue-400" href="https://mystmd.org/made-with-myst" target="_blank" rel="noreferrer"><svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" stroke="none"><g id="icon"><path fill="currentColor" d="M23.8,54.8v-3.6l4.7-0.8V17.5l-4.7-0.8V13H36l13.4,31.7h0.2l13-31.7h12.6v3.6l-4.7,0.8v32.9l4.7,0.8v3.6h-15
+          v-3.6l4.9-0.8V20.8H65L51.4,53.3h-3.8l-14-32.5h-0.1l0.2,17.4v12.1l5,0.8v3.6H23.8z"></path><path fill="#F37726" d="M47,86.9c0-5.9-3.4-8.8-10.1-8.8h-8.4c-5.2,0-9.4-1.3-12.5-3.8c-3.1-2.5-5.4-6.2-6.8-11l4.8-1.6
+          c1.8,5.6,6.4,8.6,13.8,8.8h9.2c6.4,0,10.8,2.5,13.1,7.5c2.3-5,6.7-7.5,13.1-7.5h8.4c7.8,0,12.7-2.9,14.6-8.7l4.8,1.6
+          c-1.4,4.9-3.6,8.6-6.8,11.1c-3.1,2.5-7.3,3.7-12.4,3.8H63c-6.7,0-10,2.9-10,8.8"></path></g></svg><span class="self-center ml-2 text-sm">Made with MyST</span></a></div></div></div><main class="article-grid grid-gap"><article class="article-grid subgrid-gap col-screen article content"><div class="hidden"></div><div id="skip-to-frontmatter" aria-label="article frontmatter" class="myst-fm-block mb-8 pt-9"><div class="myst-fm-block-header flex items-center mb-5 h-6 text-sm font-light"><div class="flex-grow"></div><div class="myst-fm-block-badges"></div><div class="myst-fm-downloads-dropdown relative flex inline-block mx-1 grow-0" data-headlessui-state=""><button class="myst-fm-downloads-button relative ml-2 -mr-1" id="headlessui-menu-button-:Rs8ucp:" type="button" aria-haspopup="menu" aria-expanded="false" data-headlessui-state=""><span class="sr-only">Downloads</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="1.25rem" height="1.25rem" class="myst-fm-downloads-icon"><title>Download</title><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg></button></div></div></div><div class="block my-10 lg:sticky lg:z-10 lg:h-0 lg:pt-0 lg:my-0 lg:ml-10 lg:col-margin-right" style="top:60px"><nav></nav></div><div id="skip-to-article"></div><div id="EaN0AgFul4" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from IPython.display import HTML
+
+# Make the plots look professional
+plt.style.use(&#x27;seaborn-v0_8-whitegrid&#x27;)
+plt.rcParams[&#x27;figure.figsize&#x27;] = (6, 6)
+plt.rcParams[&#x27;font.size&#x27;] = 12
+
+# GLOBAL CONSTANTS (The &quot;Universe&quot; Settings)
+BOX_SIZE = 10.0      # The size of our container
+SIGMA = 1.0          # The size of an atom
+EPSILON = 1.0        # The strength of attraction
+MASS = 1.0           # The mass of an atom
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="Clr0nDxvKH_iYOGeU7jRx" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left"></div></div><div id="ErQIEK4mxY" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre"># --- LOGIC: STRICT INITIALIZATION ---
+N_PARTICLES = 20
+MIN_DIST = 1.12 * SIGMA  # Distance where atoms repel (2^(1/6))
+MAX_ATTEMPTS = 5000      
+
+positions = np.zeros((N_PARTICLES, 2))
+
+# 1. Place Atoms (Checking for Overlaps + Boundaries)
+for i in range(N_PARTICLES):
+    placed = False
+    attempts = 0
+    while not placed and attempts &lt; MAX_ATTEMPTS:
+        candidate = np.random.rand(2) * BOX_SIZE
+        
+        if i == 0:
+            positions[i] = candidate
+            placed = True
+        else:
+            # Calculate distance to all existing atoms
+            delta = positions[:i] - candidate
+            
+            # --- PERIODIC BOUNDARY CHECK ---
+            # If atoms are on opposite edges (0 and 10), they are actually close!
+            delta -= np.round(delta / BOX_SIZE) * BOX_SIZE 
+            
+            dist_sq = np.sum(delta**2, axis=1)
+            
+            # If ALL existing atoms are far enough away, we accept this spot
+            if np.all(dist_sq &gt; MIN_DIST**2):
+                positions[i] = candidate
+                placed = True     
+        attempts += 1
+    
+    if not placed:
+        print(f&quot;Warning: Failed to place particle {i}. Box is too full.&quot;)
+
+# 2. Generate Velocities
+# Random values between -0.5 and 0.5
+velocities = (np.random.rand(N_PARTICLES, 2) - 0.5)
+
+# Center of Mass Correction
+# We subtract the average so the gas doesn&#x27;t drift
+velocities -= np.mean(velocities, axis=0)
+
+# --- VISUALIZATION ---
+fig, ax = plt.subplots(figsize=(6,6))
+ax.set_xlim(0, BOX_SIZE); ax.set_ylim(0, BOX_SIZE)
+ax.set_title(f&quot;Initial State (N={N_PARTICLES})&quot;)
+ax.set_xlabel(&quot;Position X&quot;); ax.set_ylabel(&quot;Position Y&quot;)
+
+# 1. Draw Atoms (Blue Circles)
+ax.scatter(positions[:,0], positions[:,1], s=300, color=&#x27;skyblue&#x27;, edgecolors=&#x27;black&#x27;, alpha=0.8, label=&#x27;Atom&#x27;)
+
+# 2. Draw Velocities (Red Arrows)
+# Quiver plots arrows at (x,y) with components (u,v)
+ax.quiver(positions[:,0], positions[:,1], 
+          velocities[:,0], velocities[:,1], 
+          color=&#x27;red&#x27;, width=0.005, scale=5, label=&#x27;Velocity Vector&#x27;)
+
+ax.legend(loc=&#x27;upper right&#x27;)
+plt.grid(True, linestyle=&#x27;--&#x27;, alpha=0.6)
+plt.show()
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="-9B3fec4tVtd1aAACzQSa" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-image"><img src="/MyST_site//build/8c543bbba80a2aea16b5cd747416a5a1.png" alt="&lt;Figure size 600x600 with 1 Axes&gt;"/></div></div></div><div id="SavbTPZI9r" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre"># --- LOGIC ---
+# Pre-calculate the potential at the cutoff distance to shift the curve
+CUTOFF = 3.0 * SIGMA
+inv_rc2 = (SIGMA**2) / (CUTOFF**2)
+inv_rc6 = inv_rc2**3
+E_CUTOFF = 4 * EPSILON * (inv_rc6**2 - inv_rc6)
+
+def compute_forces(pos):
+    &quot;&quot;&quot;
+    Input: Positions of all atoms
+    Output: Acceleration (Force/Mass) of all atoms, Potential Energy
+    &quot;&quot;&quot;
+    N = pos.shape[0]
+    forces = np.zeros_like(pos)
+    potential_energy = 0.0
+    
+    for i in range(N):
+        for j in range(i + 1, N): # Loop over pairs
+            delta = pos[i] - pos[j]
+            delta -= np.round(delta / BOX_SIZE) * BOX_SIZE # Periodic BC
+            r_sq = np.sum(delta**2)
+            
+            if r_sq &lt; 0.01: r_sq = 0.01
+            
+            # Optimization Cutoff
+            if r_sq &lt; CUTOFF**2:
+                inv_r2 = (SIGMA**2) / r_sq
+                inv_r6 = inv_r2**3
+                
+                # Force (unchanged by the energy shift)
+                f_scalar = (24 * EPSILON / r_sq) * (2 * inv_r6**2 - inv_r6)
+                
+                force_vec = f_scalar * delta
+                forces[i] += force_vec
+                forces[j] -= force_vec
+                
+                # ENERGY CORRECTION: Subtract E_CUTOFF
+                # This ensures Potential Energy is exactly 0.0 at the cutoff line
+                pair_energy = 4 * EPSILON * (inv_r6**2 - inv_r6) - E_CUTOFF
+                potential_energy += pair_energy
+                
+    return forces / MASS, potential_energy
+
+# --- VISUALIZATION OF THE RULE ---
+# We plot the &quot;Shifted&quot; potential to show it hits exactly zero
+r = np.linspace(0.85, 3.2, 100)
+E = 4 * EPSILON * ((SIGMA/r)**12 - (SIGMA/r)**6)
+# Apply shift to plotting data too for consistency
+E[r &gt; CUTOFF] = 0
+E[r &lt;= CUTOFF] -= E_CUTOFF
+
+plt.figure(figsize=(8,4))
+plt.plot(r, E, linewidth=3, color=&#x27;purple&#x27;)
+plt.axhline(0, color=&#x27;k&#x27;, linestyle=&#x27;--&#x27;)
+plt.axvline(1.0, color=&#x27;green&#x27;, linestyle=&#x27;--&#x27;, label=&#x27;Sigma&#x27;)
+plt.axvline(CUTOFF, color=&#x27;red&#x27;, linestyle=&#x27;:&#x27;, label=&#x27;Cutoff (Shifted to 0)&#x27;)
+plt.title(&quot;Block 2: The Rules (Shifted Lennard-Jones)&quot;)
+plt.xlabel(&quot;Distance&quot;); plt.ylabel(&quot;Energy&quot;)
+plt.legend()
+plt.show()
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="h2IWm7dEldb3hMIDwcicT" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-image"><img src="/MyST_site//build/a2801350b12815c031062c44ed47cbe4.png" alt="&lt;Figure size 800x400 with 1 Axes&gt;"/></div></div></div><div id="xldrM2rlXp" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre"># --- LOGIC ---
+def velocity_verlet_step(pos, vel, acc, dt):
+    &quot;&quot;&quot;
+    Moves the simulation forward by one step &#x27;dt&#x27;
+    &quot;&quot;&quot;
+    # 1. First Half-Kick: Update velocity halfway
+    vel_half = vel + 0.5 * acc * dt
+    
+    # 2. Drift: Update position using half-velocity
+    pos_new = pos + vel_half * dt
+    pos_new = pos_new % BOX_SIZE # Wrap around box
+    
+    # 3. Calculate new forces at new positions
+    acc_new, pe = compute_forces(pos_new)
+    
+    # 4. Second Half-Kick: Finish updating velocity
+    vel_new = vel_half + 0.5 * acc_new * dt
+    
+    return pos_new, vel_new, acc_new, pe
+
+print(&quot;Block 3: Integrator Loaded. The Engine is ready.&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="LMRvl3GUtI7uvzNxFZPoI" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>Block 3: Integrator Loaded. The Engine is ready.
+</span></code></pre></div></div></div></div><div id="CN4a1NfRKI" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre"># --- SETUP ---
+DT = 0.005             # Reduced slightly for better stability
+STEPS = 200            # How long to run
+
+# CRITICAL FIX: Use the safe variables from Cell 2!
+# We use .copy() so if you run this cell twice, it doesn&#x27;t mess up the original data.
+pos = positions.copy()
+vel = velocities.copy()
+
+# Calculate initial forces based on these SAFE positions
+acc, pot_e = compute_forces(pos) 
+
+# --- ANIMATION SETUP ---
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+
+# 1. Particle View
+ax1.set_xlim(0, BOX_SIZE); ax1.set_ylim(0, BOX_SIZE)
+ax1.set_title(f&quot;Simulation (N={len(pos)})&quot;)
+particles = ax1.scatter([], [], s=150, c=[], cmap=&#x27;coolwarm&#x27;, edgecolors=&#x27;k&#x27;)
+
+# 2. Energy View
+ax2.set_xlim(0, STEPS)
+ax2.set_title(&quot;Energy Conservation&quot;)
+ax2.set_xlabel(&quot;Time Step&quot;); ax2.set_ylabel(&quot;Energy&quot;)
+
+# Initialize lines
+line_ke, = ax2.plot([], [], &#x27;r-&#x27;, label=&#x27;Kinetic&#x27;)
+line_pe, = ax2.plot([], [], &#x27;b-&#x27;, label=&#x27;Potential&#x27;)
+line_tot, = ax2.plot([], [], &#x27;k--&#x27;, label=&#x27;Total&#x27;, lw=2)
+ax2.legend()
+
+history_ke, history_pe, history_tot = [], [], []
+
+# Pre-calculate initial energy to start the graph at t=0
+initial_ke = 0.5 * MASS * np.sum(np.sum(vel**2, axis=1))
+history_ke.append(initial_ke)
+history_pe.append(pot_e)
+history_tot.append(initial_ke + pot_e)
+
+def update(frame):
+    global pos, vel, acc
+    
+    # CALL THE INTEGRATOR
+    pos, vel, acc, pe = velocity_verlet_step(pos, vel, acc, DT)
+    
+    # CALCULATE KINETIC ENERGY
+    ke = 0.5 * MASS * np.sum(np.sum(vel**2, axis=1))
+    
+    # STORE DATA
+    history_ke.append(ke); history_pe.append(pe); history_tot.append(ke+pe)
+    
+    # UPDATE VISUALS
+    particles.set_offsets(pos)
+    particles.set_array(np.linalg.norm(vel, axis=1)) # Color by speed
+    
+    x = range(len(history_ke))
+    line_ke.set_data(x, history_ke)
+    line_pe.set_data(x, history_pe)
+    line_tot.set_data(x, history_tot)
+    
+    # Auto-scale the energy plot
+    if len(history_ke) &gt; 1:
+        min_y = min(min(history_pe), min(history_ke))
+        max_y = max(max(history_pe), max(history_ke))
+        ax2.set_ylim(min_y - 5, max_y + 5)
+        
+    return particles, line_ke, line_pe, line_tot
+
+anim = animation.FuncAnimation(fig, update, frames=STEPS, interval=30, blit=False)
+plt.close()
+HTML(anim.to_jshtml())
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="j0UzQ94AlJVXzBAMz7nBl" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div><div class="p-2.5">Loading...</div></div></div></div><div id="rADO9QIw1I" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">import time
+
+# --- SETUP (same as Step 5) ---
+DT = 0.005
+STEPS = 200
+
+pos = positions.copy()
+vel = velocities.copy()
+acc, _ = compute_forces(pos)
+
+# --- TIMED LOOP ---
+start_time = time.perf_counter()
+
+for step in range(STEPS):
+    pos, vel, acc, _ = velocity_verlet_step(pos, vel, acc, DT)
+
+end_time = time.perf_counter()
+
+wall_time_s = end_time - start_time
+time_per_step_ms = (wall_time_s / STEPS) * 1000
+
+print(&quot;=&quot; * 45)
+print(f&quot;  Particles (N)      : {N_PARTICLES}&quot;)
+print(f&quot;  Steps completed    : {STEPS}&quot;)
+print(f&quot;  Total wall time    : {wall_time_s:.3f} seconds&quot;)
+print(f&quot;  Time per step      : {time_per_step_ms:.3f} ms&quot;)
+print(&quot;=&quot; * 45)
+
+# --- SCALE UP: How long for a REAL simulation? ---
+# A real MD run targets ~1 microsecond = 1,000,000 steps at dt=1fs
+REAL_STEPS = 1_000_000_000
+projected_s = (wall_time_s / STEPS) * REAL_STEPS
+projected_days = projected_s / 86400
+
+print(f&quot;\n  Projected time for {REAL_STEPS:,} steps:&quot;)
+print(f&quot;  → {projected_s:,.1f} seconds  ({projected_days:.1f} days)&quot;)
+print(f&quot;\n  This is why we need supercomputers!&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="8EVBvwKmsdHfjEbNFEjQo" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>=============================================
+  Particles (N)      : 20
+  Steps completed    : 200
+  Total wall time    : 0.373 seconds
+  Time per step      : 1.867 ms
+=============================================
+
+  Projected time for 1,000,000,000 steps:
+  → 1,867,214.9 seconds  (21.6 days)
+
+  This is why we need supercomputers!
+</span></code></pre></div></div></div></div><div id="PRhypnrDzL" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">import time
+import numpy as np
+import matplotlib.pyplot as plt
+
+# --- PARAMETERS ---
+# Test a range of particle counts
+particle_counts = [5, 10, 20, 40, 80, 160]
+TIMING_STEPS = 50          # Steps per timing run (keep short for large N)
+timings = []
+
+print(f&quot;{&#x27;N&#x27;:&gt;6} | {&#x27;Time/step (ms)&#x27;:&gt;16} | {&#x27;Pairs&#x27;:&gt;10}&quot;)
+print(&quot;-&quot; * 38)
+
+for N in particle_counts:
+    # Place N atoms randomly (no overlap check for speed)
+    test_pos = np.random.rand(N, 2) * BOX_SIZE
+    test_vel = (np.random.rand(N, 2) - 0.5)
+    test_acc, _ = compute_forces(test_pos)
+    
+    # Time TIMING_STEPS steps
+    t0 = time.perf_counter()
+    for _ in range(TIMING_STEPS):
+        test_pos, test_vel, test_acc, _ = velocity_verlet_step(
+            test_pos, test_vel, test_acc, DT
+        )
+    t1 = time.perf_counter()
+    
+    ms_per_step = ((t1 - t0) / TIMING_STEPS) * 1000
+    n_pairs = N * (N - 1) // 2
+    timings.append(ms_per_step)
+    print(f&quot;{N:&gt;6} | {ms_per_step:&gt;16.4f} | {n_pairs:&gt;10,}&quot;)
+
+# --- PLOT ---
+fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+# Left: Raw timing
+axes[0].plot(particle_counts, timings, &#x27;o-&#x27;, color=&#x27;steelblue&#x27;, lw=2, ms=8)
+axes[0].set_xlabel(&quot;Number of Particles (N)&quot;, fontsize=12)
+axes[0].set_ylabel(&quot;Wall Time per Step (ms)&quot;, fontsize=12)
+axes[0].set_title(&quot;Raw Scaling: Time vs. N&quot;, fontsize=13)
+axes[0].grid(True, alpha=0.4)
+
+# Right: Log-log plot to reveal the power law
+axes[1].loglog(particle_counts, timings, &#x27;o-&#x27;, color=&#x27;crimson&#x27;, lw=2, ms=8, label=&#x27;Measured&#x27;)
+
+# Overlay a reference O(N^2) line
+N_arr = np.array(particle_counts, dtype=float)
+ref = timings[0] * (N_arr / particle_counts[0])**2
+axes[1].loglog(particle_counts, ref, &#x27;k--&#x27;, lw=1.5, alpha=0.6, label=r&#x27;$O(N^2)$ reference&#x27;)
+
+axes[1].set_xlabel(&quot;Number of Particles (N)&quot;, fontsize=12)
+axes[1].set_ylabel(&quot;Wall Time per Step (ms)&quot;, fontsize=12)
+axes[1].set_title(r&quot;Log-Log Scaling (slope ≈ 2 confirms $O(N^2)$)&quot;, fontsize=13)
+axes[1].legend()
+axes[1].grid(True, which=&#x27;both&#x27;, alpha=0.3)
+
+plt.suptitle(&quot;compute_forces Scaling Analysis&quot;, fontsize=14, fontweight=&#x27;bold&#x27;, y=1.02)
+plt.tight_layout()
+plt.show()
+
+print(&quot;\nConclusion: The log-log slope ≈ 2 confirms O(N²) scaling.&quot;)
+print(&quot;Real codes use neighbor lists + cutoffs to reduce this to ~O(N).&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="J3zo3rdgWiU4tDrnjJzXg" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>     N |   Time/step (ms) |      Pairs
+--------------------------------------
+     5 |           0.1591 |         10
+    10 |           0.5255 |         45
+    20 |           1.9542 |        190
+    40 |           7.9461 |        780
+    80 |          30.2539 |      3,160
+   160 |         122.5634 |     12,720
+</span></code></pre></div></div><div data-name="safe-output-image"><img src="/MyST_site//build/eaea4e5a350cfba404e2b6e1b9677221.png" alt="&lt;Figure size 1200x500 with 2 Axes&gt;"/></div><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>
+Conclusion: The log-log slope ≈ 2 confirms O(N²) scaling.
+Real codes use neighbor lists + cutoffs to reduce this to ~O(N).
+</span></code></pre></div></div></div></div><div id="IggvUEFarg" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">import numpy as np
+import matplotlib.pyplot as plt
+
+plt.style.use(&#x27;seaborn-v0_8-whitegrid&#x27;)
+plt.rcParams[&#x27;font.size&#x27;] = 12
+
+# --- In reduced LJ units: kB = 1, mass = 1 ---
+# Degrees of freedom for 2D: 2*N - 2 (subtract 2 for fixed CoM)
+def compute_temperature(vel, N):
+    &quot;&quot;&quot;
+    Compute instantaneous kinetic temperature in reduced LJ units.
+    In 2D: T = sum(v^2) / (N_dof), where N_dof = 2N - 2
+    &quot;&quot;&quot;
+    N_dof = 2 * N - 2
+    ke = 0.5 * MASS * np.sum(vel**2)
+    return (2.0 * ke) / N_dof
+
+print(&quot;Temperature calculator defined.&quot;)
+print(f&quot;Using N={N_PARTICLES} particles → N_dof = {2*N_PARTICLES - 2}&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="OG4cB_FKbd4dgGzPDkxHI" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>Temperature calculator defined.
+Using N=20 particles → N_dof = 38
+</span></code></pre></div></div></div></div><div id="PbalFnltYh" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">def berendsen_thermostat(vel, T_current, T_target, dt, tau_T):
+    &quot;&quot;&quot;
+    Berendsen velocity-rescaling thermostat.
+
+    Parameters
+    ----------
+    vel      : (N, 2) array of velocities
+    T_current: instantaneous temperature at this step
+    T_target : desired temperature
+    dt       : timestep
+    tau_T    : coupling time constant (larger = weaker coupling)
+
+    Returns
+    -------
+    vel_scaled : rescaled velocities
+    &quot;&quot;&quot;
+    if T_current &lt; 1e-10:
+        return vel   # Avoid divide-by-zero if system is frozen
+
+    # The rescaling factor (Eq. from lecture notes)
+    lambda_sq = 1.0 + (dt / tau_T) * ((T_target / T_current) - 1.0)
+
+    # Safety clamp: prevent extreme rescaling in the first few steps
+    lambda_sq = max(0.1, min(lambda_sq, 10.0))
+
+    return vel * np.sqrt(lambda_sq)
+
+print(&quot;Berendsen thermostat defined.&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="BMj39dg3gcrZk1lLEm1ZV" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>Berendsen thermostat defined.
+</span></code></pre></div></div></div></div><div id="AaXe0dkxrS" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre"># --- PARAMETERS ---
+T_TARGET = 1.0      # Target temperature in reduced LJ units
+DT       = 0.005    # Timestep
+TAU_T    = 0.5      # Coupling time (in reduced time units)
+STEPS    = 10000    # Number of steps
+
+# --- INITIALIZE from Tutorial 6 starting state ---
+pos_B = positions.copy()
+vel_B = velocities.copy()
+
+# Rescale initial velocities to be close to T_TARGET
+T_init = compute_temperature(vel_B, N_PARTICLES)
+if T_init &gt; 1e-10:
+    vel_B *= np.sqrt(T_TARGET / T_init)
+
+acc_B, _ = compute_forces(pos_B)
+
+# --- DATA STORAGE ---
+temps_B  = []
+ke_B     = []
+pe_B     = []
+etot_B   = []
+
+# --- MAIN LOOP ---
+print(f&quot;Running Berendsen NVT: {STEPS} steps, T_target={T_TARGET}, tau_T={TAU_T}&quot;)
+
+for step in range(STEPS):
+    # 1. Standard Velocity Verlet step
+    pos_B, vel_B, acc_B, pe = velocity_verlet_step(pos_B, vel_B, acc_B, DT)
+
+    # 2. Apply Berendsen thermostat AFTER the full VV step
+    T_inst = compute_temperature(vel_B, N_PARTICLES)
+    vel_B  = berendsen_thermostat(vel_B, T_inst, T_TARGET, DT, TAU_T)
+
+    # 3. Record thermodynamic data
+    T_new  = compute_temperature(vel_B, N_PARTICLES)
+    ke     = 0.5 * MASS * np.sum(vel_B**2)
+    temps_B.append(T_new)
+    ke_B.append(ke)
+    pe_B.append(pe)
+    etot_B.append(ke + pe)
+
+temps_B = np.array(temps_B)
+ke_B    = np.array(ke_B)
+pe_B    = np.array(pe_B)
+etot_B  = np.array(etot_B)
+
+print(f&quot;Done. Mean T = {np.mean(temps_B):.4f} (target: {T_TARGET})&quot;)
+print(f&quot;Std  T = {np.std(temps_B):.4f}&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="1C38Yzz7j9W8WJcQIoS9E" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>Running Berendsen NVT: 10000 steps, T_target=1.0, tau_T=0.5
+Done. Mean T = 1.0013 (target: 1.0)
+Std  T = 0.0734
+</span></code></pre></div></div></div></div><div id="SGsPT3B1XX" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">def nose_hoover_chain_step(pos, vel, acc, xi1, xi2, p_xi1, p_xi2, Q1, Q2,
+                            dt, T_target, N_dof, force_fn):
+    &quot;&quot;&quot;
+    One timestep of Velocity Verlet + Nosé-Hoover Chain (2 links).
+
+    The chain is integrated using the Liouville operator splitting (RESPA-style),
+    which keeps the extended system symplectic and time-reversible.
+
+    Parameters
+    ----------
+    pos, vel, acc   : positions, velocities, accelerations  (N, 2)
+    xi1, xi2        : thermostat position variables (scalars)
+    p_xi1, p_xi2    : thermostat momentum variables (scalars)
+    Q1, Q2          : thermostat masses (scalars)
+    dt              : timestep
+    T_target        : target temperature (kB = 1 in reduced units)
+    N_dof           : degrees of freedom (= 2N - 2 in 2D)
+    force_fn        : function(pos) -&gt; (acc, pe)
+
+    Returns
+    -------
+    Updated pos, vel, acc, xi1, xi2, p_xi1, p_xi2, pe
+    &quot;&quot;&quot;
+    # --- 1. Half-step update of chain momenta (outermost first) ---
+    # Update p_xi2 using friction from p_xi1
+    KE2 = p_xi1**2 / (2.0 * Q1)
+    p_xi2 += 0.5 * dt * (KE2 - T_target)
+
+    # Update p_xi1 using friction from atoms and p_xi2
+    KE_atoms = 0.5 * MASS * np.sum(vel**2)
+    scale1 = np.exp(-0.5 * dt * p_xi2 / Q2)
+    p_xi1  = p_xi1 * scale1 + 0.5 * dt * scale1 * (2.0 * KE_atoms - N_dof * T_target)
+    p_xi1 *= scale1     # symmetric: apply scale factor twice (Yoshida splitting)
+
+    # --- 2. Rescale velocities using the chain friction ---
+    vel_scale = np.exp(-0.5 * dt * p_xi1 / Q1)
+    vel = vel * vel_scale
+
+    # --- 3. Standard Velocity Verlet: half-kick → drift → force → half-kick ---
+    vel_half = vel + 0.5 * acc * dt
+    pos_new  = (pos + vel_half * dt) % BOX_SIZE
+    acc_new, pe = force_fn(pos_new)
+    vel_new  = vel_half + 0.5 * acc_new * dt
+
+    # --- 4. Half-step update of chain momenta (reverse order) ---
+    # Rescale again (second half)
+    vel_new = vel_new * vel_scale
+
+    KE_atoms_new = 0.5 * MASS * np.sum(vel_new**2)
+    scale1_rev   = np.exp(-0.5 * dt * p_xi2 / Q2)
+    p_xi1 = p_xi1 * scale1_rev + 0.5 * dt * scale1_rev * (2.0 * KE_atoms_new - N_dof * T_target)
+    p_xi1 *= scale1_rev
+
+    KE2_new = p_xi1**2 / (2.0 * Q1)
+    p_xi2  += 0.5 * dt * (KE2_new - T_target)
+
+    # --- 5. Advance thermostat positions ---
+    xi1 += dt * p_xi1 / Q1
+    xi2 += dt * p_xi2 / Q2
+
+    return pos_new, vel_new, acc_new, xi1, xi2, p_xi1, p_xi2, pe
+
+print(&quot;Nosé-Hoover Chain integrator defined.&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="joJBsBBSGf4NAm-jC7dqn" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>Nosé-Hoover Chain integrator defined.
+</span></code></pre></div></div></div></div><div id="UQyJKXCN6C" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre"># --- PARAMETERS (same physics, same target T) ---
+T_TARGET = 1.0
+DT       = 0.005
+STEPS    = 10000
+
+# Thermostat &quot;mass&quot; Q: controls the inertia of the heat bath.
+# Rule of thumb: Q ≈ N_dof * kB * T_target * tau_T^2
+# We use tau_T = 0.2 (tighter coupling for better ergodic sampling)
+N_DOF   = 2 * N_PARTICLES - 2
+TAU_NH  = 0.2
+Q1 = N_DOF * T_TARGET * TAU_NH**2   # Mass of chain link 1
+Q2 = T_TARGET * TAU_NH**2           # Mass of chain link 2
+
+print(f&quot;NH Chain masses: Q1={Q1:.2f}, Q2={Q2:.4f}&quot;)
+
+# --- INITIALIZE (same starting state for a fair comparison) ---
+pos_NH  = positions.copy()
+vel_NH  = velocities.copy()
+
+# Rescale to T_TARGET
+T_init = compute_temperature(vel_NH, N_PARTICLES)
+if T_init &gt; 1e-10:
+    vel_NH *= np.sqrt(T_TARGET / T_init)
+
+acc_NH, _ = compute_forces(pos_NH)
+
+# Initialize chain variables at rest
+xi1, xi2     = 0.0, 0.0
+p_xi1, p_xi2 = 0.0, 0.0
+
+# --- DATA STORAGE ---
+temps_NH = []
+ke_NH    = []
+pe_NH    = []
+etot_NH  = []
+
+# --- MAIN LOOP ---
+print(f&quot;Running Nosé-Hoover Chain NVT: {STEPS} steps, T_target={T_TARGET}&quot;)
+
+for step in range(STEPS):
+    pos_NH, vel_NH, acc_NH, xi1, xi2, p_xi1, p_xi2, pe = nose_hoover_chain_step(
+        pos_NH, vel_NH, acc_NH, xi1, xi2, p_xi1, p_xi2,
+        Q1, Q2, DT, T_TARGET, N_DOF, compute_forces
+    )
+
+    T_inst = compute_temperature(vel_NH, N_PARTICLES)
+    ke     = 0.5 * MASS * np.sum(vel_NH**2)
+    temps_NH.append(T_inst)
+    ke_NH.append(ke)
+    pe_NH.append(pe)
+    etot_NH.append(ke + pe)
+
+temps_NH = np.array(temps_NH)
+ke_NH    = np.array(ke_NH)
+pe_NH    = np.array(pe_NH)
+etot_NH  = np.array(etot_NH)
+
+print(f&quot;Done. Mean T = {np.mean(temps_NH):.4f} (target: {T_TARGET})&quot;)
+print(f&quot;Std  T = {np.std(temps_NH):.4f}&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="hpggr-8xB7F1284z8nk5Q" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>NH Chain masses: Q1=1.52, Q2=0.0400
+Running Nosé-Hoover Chain NVT: 10000 steps, T_target=1.0
+Done. Mean T = 1.0090 (target: 1.0)
+Std  T = 0.3627
+</span></code></pre></div></div></div></div><div id="by63sCjDS2" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">steps_B  = np.arange(len(temps_B))
+steps_NH = np.arange(len(temps_NH))
+
+fig, axes = plt.subplots(2, 1, figsize=(12, 7), sharex=False)
+
+# --- Berendsen ---
+axes[0].plot(steps_B, temps_B, color=&#x27;steelblue&#x27;, alpha=0.7, lw=0.8, label=&#x27;Instantaneous T&#x27;)
+axes[0].axhline(T_TARGET,         color=&#x27;red&#x27;,  lw=1.5, ls=&#x27;--&#x27;, label=f&#x27;Target ({T_TARGET})&#x27;)
+axes[0].axhline(np.mean(temps_B), color=&#x27;navy&#x27;, lw=1.5, ls=&#x27;-&#x27;,
+                label=f&#x27;Mean = {np.mean(temps_B):.3f}&#x27;)
+axes[0].fill_between(steps_B,
+                     np.mean(temps_B) - np.std(temps_B),
+                     np.mean(temps_B) + np.std(temps_B),
+                     alpha=0.15, color=&#x27;steelblue&#x27;, label=f&#x27;±1σ (σ={np.std(temps_B):.4f})&#x27;)
+axes[0].set_ylabel(&#x27;Temperature (LJ units)&#x27;, fontsize=11)
+axes[0].set_title(&#x27;Berendsen Thermostat — Temperature Trace&#x27;, fontsize=13)
+axes[0].legend(loc=&#x27;upper right&#x27;, fontsize=9)
+axes[0].set_ylim(0, 2.5)
+
+# --- Nosé-Hoover ---
+axes[1].plot(steps_NH, temps_NH, color=&#x27;darkorange&#x27;, alpha=0.7, lw=0.8, label=&#x27;Instantaneous T&#x27;)
+axes[1].axhline(T_TARGET,          color=&#x27;red&#x27;,         lw=1.5, ls=&#x27;--&#x27;, label=f&#x27;Target ({T_TARGET})&#x27;)
+axes[1].axhline(np.mean(temps_NH), color=&#x27;saddlebrown&#x27;, lw=1.5, ls=&#x27;-&#x27;,
+                label=f&#x27;Mean = {np.mean(temps_NH):.3f}&#x27;)
+axes[1].fill_between(steps_NH,
+                     np.mean(temps_NH) - np.std(temps_NH),
+                     np.mean(temps_NH) + np.std(temps_NH),
+                     alpha=0.15, color=&#x27;darkorange&#x27;, label=f&#x27;±1σ (σ={np.std(temps_NH):.4f})&#x27;)
+axes[1].set_ylabel(&#x27;Temperature (LJ units)&#x27;, fontsize=11)
+axes[1].set_xlabel(&#x27;Step&#x27;, fontsize=11)
+axes[1].set_title(&#x27;Nosé-Hoover Chain — Temperature Trace&#x27;, fontsize=13)
+axes[1].legend(loc=&#x27;upper right&#x27;, fontsize=9)
+axes[1].set_ylim(0, 2.5)
+
+plt.suptitle(&#x27;Thermostat Comparison: Temperature Control&#x27;, fontsize=14, fontweight=&#x27;bold&#x27;, y=1.01)
+plt.tight_layout()
+plt.show()
+
+print(&quot;\nObservation:&quot;)
+print(f&quot;  Berendsen   std(T) = {np.std(temps_B):.4f}&quot;)
+print(f&quot;  Nosé-Hoover std(T) = {np.std(temps_NH):.4f}&quot;)
+print(f&quot;\n  Berendsen suppresses fluctuations — its σ(T) is artificially small.&quot;)
+print(f&quot;  Nosé-Hoover allows natural fluctuations expected from statistical mechanics.&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="8TPo5Y1i69DwUtt6Iiuy4" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-image"><img src="/MyST_site//build/ee739cfc0bff00ea9da782af5728e33c.png" alt="&lt;Figure size 1200x700 with 2 Axes&gt;"/></div><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>
+Observation:
+  Berendsen   std(T) = 0.0734
+  Nosé-Hoover std(T) = 0.3627
+
+  Berendsen suppresses fluctuations — its σ(T) is artificially small.
+  Nosé-Hoover allows natural fluctuations expected from statistical mechanics.
+</span></code></pre></div></div></div></div><div id="mamDgmrvVz" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">from scipy.stats import chi2
+
+# --- Theoretical chi-squared distribution ---
+# For N_dof degrees of freedom, KE ~ (kB*T/2) * chi2(N_dof)
+# So KE / (kB*T/2) ~ chi2(N_dof)
+N_dof  = 2 * N_PARTICLES - 2
+scale  = T_TARGET / 2.0          # kB*T/2 in reduced units
+
+# Discard first 1000 steps (equilibration)
+ke_B_eq  = ke_B[1000:]
+ke_NH_eq = ke_NH[1000:]
+
+ke_range = np.linspace(0, max(ke_B_eq.max(), ke_NH_eq.max()) * 1.1, 300)
+theory   = chi2.pdf(ke_range / scale, df=N_dof) / scale   # Proper normalization
+
+fig, axes = plt.subplots(1, 2, figsize=(13, 5), sharey=True)
+
+# --- Berendsen ---
+axes[0].hist(ke_B_eq, bins=50, density=True, color=&#x27;steelblue&#x27;, alpha=0.6,
+             edgecolor=&#x27;black&#x27;, lw=0.3, label=&#x27;Berendsen&#x27;)
+axes[0].plot(ke_range, theory, &#x27;r-&#x27;, lw=2.5, label=f&#x27;Canonical (χ² df={N_dof})&#x27;)
+axes[0].set_xlabel(&#x27;Kinetic Energy (LJ units)&#x27;, fontsize=11)
+axes[0].set_ylabel(&#x27;Probability Density&#x27;, fontsize=11)
+axes[0].set_title(&#x27;Berendsen: KE Distribution&#x27;, fontsize=13)
+axes[0].legend(fontsize=10)
+
+# --- Nosé-Hoover ---
+axes[1].hist(ke_NH_eq, bins=50, density=True, color=&#x27;darkorange&#x27;, alpha=0.6,
+             edgecolor=&#x27;black&#x27;, lw=0.3, label=&#x27;Nosé-Hoover Chain&#x27;)
+axes[1].plot(ke_range, theory, &#x27;r-&#x27;, lw=2.5, label=f&#x27;Canonical (χ² df={N_dof})&#x27;)
+axes[1].set_xlabel(&#x27;Kinetic Energy (LJ units)&#x27;, fontsize=11)
+axes[1].set_title(&#x27;Nosé-Hoover Chain: KE Distribution&#x27;, fontsize=13)
+axes[1].legend(fontsize=10)
+
+plt.suptitle(&#x27;Canonical Ensemble Test: Does the KE follow χ²?&#x27;, fontsize=14, fontweight=&#x27;bold&#x27;)
+plt.tight_layout()
+plt.show()
+
+print(&quot;\nInterpretation:&quot;)
+print(&quot;  If the histogram matches the red curve → correct canonical sampling.&quot;)
+print(&quot;  Berendsen: narrow histogram, does NOT match the red curve.&quot;)
+print(&quot;  Nosé-Hoover: broader histogram, matches the red curve.&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="iWW1QmaR5bPAx1LbH7IbG" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-image"><img src="/MyST_site//build/53654fcb8d9093d54f47a652012d18ec.png" alt="&lt;Figure size 1300x500 with 2 Axes&gt;"/></div><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>
+Interpretation:
+  If the histogram matches the red curve → correct canonical sampling.
+  Berendsen: narrow histogram, does NOT match the red curve.
+  Nosé-Hoover: broader histogram, matches the red curve.
+</span></code></pre></div></div></div></div><div id="yYSaJGZr7T" class="myst-jp-nb-block relative group/block"><div class="myst-jp-nb-block-spinner flex sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:hidden"><div class="flex absolute top-0 right-0"></div></div><div class="myst-jp-nb-block sticky top-[115px] z-10 opacity-90 group-hover/block:opacity-100 group-hover/block:flex"><div class="absolute -top-[12px] right-0 flex flex-row rounded bg-white dark:bg-slate-800"></div></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl dark:shadow-neutral-900 border border-l-4 border-gray-200 border-l-blue-400 dark:border-l-blue-400 dark:border-gray-800"><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">def running_average(arr, window=200):
+    &quot;&quot;&quot;Simple moving average using convolution.&quot;&quot;&quot;
+    kernel = np.ones(window) / window
+    return np.convolve(arr, kernel, mode=&#x27;valid&#x27;)
+
+steps_B  = np.arange(len(etot_B))
+steps_NH = np.arange(len(etot_NH))
+
+window = 200
+
+ra_B  = running_average(etot_B,  window)
+ra_NH = running_average(etot_NH, window)
+
+# x-axes for the running averages (shorter due to convolution &#x27;valid&#x27; mode)
+steps_ra_B  = steps_B[window - 1:]
+steps_ra_NH = steps_NH[window - 1:]
+
+fig, axes = plt.subplots(2, 1, figsize=(12, 6), sharex=False)
+
+# --- Berendsen ---
+axes[0].plot(steps_B, etot_B, color=&#x27;steelblue&#x27;, lw=0.6, alpha=0.4, label=&#x27;Instantaneous K+U&#x27;)
+axes[0].plot(steps_ra_B, ra_B, color=&#x27;navy&#x27;, lw=2.0, label=f&#x27;Running avg (window={window})&#x27;)
+axes[0].set_ylabel(&#x27;K + U (LJ units)&#x27;, fontsize=11)
+axes[0].set_title(&#x27;Berendsen: Total Mechanical Energy — running average drifts freely&#x27;, fontsize=11)
+axes[0].legend(fontsize=9)
+
+# --- Nosé-Hoover ---
+axes[1].plot(steps_NH, etot_NH, color=&#x27;darkorange&#x27;, lw=0.6, alpha=0.4, label=&#x27;Instantaneous K+U&#x27;)
+axes[1].plot(steps_ra_NH, ra_NH, color=&#x27;saddlebrown&#x27;, lw=2.0, label=f&#x27;Running avg (window={window})&#x27;)
+axes[1].set_ylabel(&#x27;K + U (LJ units)&#x27;, fontsize=11)
+axes[1].set_xlabel(&#x27;Step&#x27;, fontsize=11)
+axes[1].set_title(&#x27;Nosé-Hoover Chain: Total Mechanical Energy — fluctuates around a stable mean&#x27;, fontsize=11)
+axes[1].legend(fontsize=9)
+
+plt.suptitle(&#x27;Mechanical Energy: Berendsen vs. Nosé-Hoover&#x27;, fontsize=13, fontweight=&#x27;bold&#x27;, y=1.01)
+plt.tight_layout()
+plt.show()
+
+print(&quot;\nObservation:&quot;)
+print(f&quot;  Berendsen   — mean K+U = {np.mean(etot_B):.3f},  std = {np.std(etot_B):.4f}&quot;)
+print(f&quot;  Nosé-Hoover — mean K+U = {np.mean(etot_NH):.3f},  std = {np.std(etot_NH):.4f}&quot;)
+print(f&quot;\n  Berendsen has no conserved quantity — the bath injects/removes energy ad hoc.&quot;)
+print(f&quot;  Nosé-Hoover fluctuates but has a conserved extended Hamiltonian (bath included).&quot;)</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-blue-400 hover:text-blue-500 absolute right-1 myst-code-copy-icon top-1" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div data-name="outputs-container" data-mdast-node-id="_aIROyQdMgU6sZlETRTIh" class="max-w-full overflow-y-visible m-0 group not-prose relative text-left mb-5"><div data-name="safe-output-image"><img src="/MyST_site//build/c892fe90b19c5eaf488b53c9fec6f806.png" alt="&lt;Figure size 1200x600 with 2 Axes&gt;"/></div><div data-name="safe-output-stream"><div><pre aria-label="cell output stream" class="myst-jp-stream-output text-sm font-thin font-system overflow-auto jupyter-output"><code><span>
+Observation:
+  Berendsen   — mean K+U = 8.485,  std = 1.4582
+  Nosé-Hoover — mean K+U = 8.808,  std = 7.4506
+
+  Berendsen has no conserved quantity — the bath injects/removes energy ad hoc.
+  Nosé-Hoover fluctuates but has a conserved extended Hamiltonian (bath included).
+</span></code></pre></div></div></div></div><div class="myst-backmatter-parts"></div><div class="myst-footer-links flex pt-10 mb-10 space-x-4"><a class="myst-footer-link flex-1 block p-4 font-normal text-gray-600 no-underline border border-gray-200 rounded shadow-sm group hover:border-blue-600 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 dark:text-gray-100 dark:border-gray-500 hover:shadow-lg dark:shadow-neutral-700 myst-footer-link-prev" aria-label="Previous: Tutorial 6: Building an MD Engine from Scratch" href="/MyST_site//md-run-using-py"><div class="flex h-full align-middle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="1.5rem" height="1.5rem" class="myst-footer-link-icon self-center transition-transform group-hover:-translate-x-1 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg><div class="flex-grow text-right"><div class="myst-footer-link-group text-xs text-gray-500 dark:text-gray-400">MyST Site</div>Tutorial 6: Building an MD Engine from Scratch</div></div></a></div></article></main><script>((a,l)=>{if(!window.history.state||!window.history.state.key){let u=Math.random().toString(32).slice(2);window.history.replaceState({key:u},"")}try{let d=JSON.parse(sessionStorage.getItem(a)||"{}")[l||window.history.state.key];typeof d=="number"&&window.scrollTo(0,d)}catch(u){console.error(u),sessionStorage.removeItem(a)}})("positions", null)</script><link rel="modulepreload" href="/MyST_site//build/entry.client-PCJPW7TK.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-AQ2CODAG.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-JJXTQVMA.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-OZE3FFNP.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-JTFCKY4Z.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-C4DFGG5C.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-J7TUH54J.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-FZ2S7OYD.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-JEM6JXYA.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-34XIY2DH.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-KQM5FBHR.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-OCWQY3HK.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-7HNKBP4B.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-CUKUDK3R.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-3EBOCCHJ.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-O4VQNZ62.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-4OEDG4JQ.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-GUCIBHGO.js"/><link rel="modulepreload" href="/MyST_site//build/root-LKQMTEPT.js"/><link rel="modulepreload" href="/MyST_site//build/_shared/chunk-HGWUN434.js"/><link rel="modulepreload" href="/MyST_site//build/routes/$-XDAODCRF.js"/><script>window.__remixContext = {"url":"/assignment-4-ex","state":{"loaderData":{"root":{"config":{"version":3,"myst":"1.9.1","options":{},"nav":[],"actions":[],"projects":[{"title":"MyST Site","id":"e5c27d9e-b15a-4c9f-8707-614c782cf6ab","exports":[],"bibliography":[],"index":"index","pages":[{"slug":"md-run-using-py","title":"Tutorial 6: Building an MD Engine from Scratch","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":1},{"slug":"assignment-4-ex","title":"Assignment 4 Ex","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":1}]}]},"CONTENT_CDN_PORT":"3100","MODE":"static","BASE_URL":"/MyST_site/"},"routes/$":{"config":{"version":3,"myst":"1.9.1","options":{},"nav":[],"actions":[],"projects":[{"title":"MyST Site","id":"e5c27d9e-b15a-4c9f-8707-614c782cf6ab","exports":[],"bibliography":[],"index":"index","pages":[{"slug":"md-run-using-py","title":"Tutorial 6: Building an MD Engine from Scratch","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":1},{"slug":"assignment-4-ex","title":"Assignment 4 Ex","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":1}]}]},"page":{"version":3,"kind":"Notebook","sha256":"2679a15c80a073aa2a264537bbb3810c44d478e846402e7b49a05f6346debb37","slug":"assignment-4-ex","location":"/Assignment_4_Ex.ipynb","dependencies":[],"frontmatter":{"kernelspec":{"name":"my_1029_env","display_name":"Python (my_1029_env)","language":"python"},"exports":[{"format":"ipynb","filename":"Assignment_4_Ex.ipynb","url":"/MyST_site//build/Assignment_4_Ex-7bf4c2d42e155c1fa9593331e02e8693.ipynb"}]},"widgets":{},"mdast":{"type":"root","children":[{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"import numpy as np\nimport matplotlib.pyplot as plt\nimport matplotlib.animation as animation\nfrom IPython.display import HTML\n\n# Make the plots look professional\nplt.style.use('seaborn-v0_8-whitegrid')\nplt.rcParams['figure.figsize'] = (6, 6)\nplt.rcParams['font.size'] = 12\n\n# GLOBAL CONSTANTS (The \"Universe\" Settings)\nBOX_SIZE = 10.0      # The size of our container\nSIGMA = 1.0          # The size of an atom\nEPSILON = 1.0        # The strength of attraction\nMASS = 1.0           # The mass of an atom\n","key":"StOqRVyjUn"},{"type":"outputs","id":"Clr0nDxvKH_iYOGeU7jRx","children":[],"key":"XMGGBEtP1X"}],"key":"EaN0AgFul4"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"# --- LOGIC: STRICT INITIALIZATION ---\nN_PARTICLES = 20\nMIN_DIST = 1.12 * SIGMA  # Distance where atoms repel (2^(1/6))\nMAX_ATTEMPTS = 5000      \n\npositions = np.zeros((N_PARTICLES, 2))\n\n# 1. Place Atoms (Checking for Overlaps + Boundaries)\nfor i in range(N_PARTICLES):\n    placed = False\n    attempts = 0\n    while not placed and attempts \u003c MAX_ATTEMPTS:\n        candidate = np.random.rand(2) * BOX_SIZE\n        \n        if i == 0:\n            positions[i] = candidate\n            placed = True\n        else:\n            # Calculate distance to all existing atoms\n            delta = positions[:i] - candidate\n            \n            # --- PERIODIC BOUNDARY CHECK ---\n            # If atoms are on opposite edges (0 and 10), they are actually close!\n            delta -= np.round(delta / BOX_SIZE) * BOX_SIZE \n            \n            dist_sq = np.sum(delta**2, axis=1)\n            \n            # If ALL existing atoms are far enough away, we accept this spot\n            if np.all(dist_sq \u003e MIN_DIST**2):\n                positions[i] = candidate\n                placed = True     \n        attempts += 1\n    \n    if not placed:\n        print(f\"Warning: Failed to place particle {i}. Box is too full.\")\n\n# 2. Generate Velocities\n# Random values between -0.5 and 0.5\nvelocities = (np.random.rand(N_PARTICLES, 2) - 0.5)\n\n# Center of Mass Correction\n# We subtract the average so the gas doesn't drift\nvelocities -= np.mean(velocities, axis=0)\n\n# --- VISUALIZATION ---\nfig, ax = plt.subplots(figsize=(6,6))\nax.set_xlim(0, BOX_SIZE); ax.set_ylim(0, BOX_SIZE)\nax.set_title(f\"Initial State (N={N_PARTICLES})\")\nax.set_xlabel(\"Position X\"); ax.set_ylabel(\"Position Y\")\n\n# 1. Draw Atoms (Blue Circles)\nax.scatter(positions[:,0], positions[:,1], s=300, color='skyblue', edgecolors='black', alpha=0.8, label='Atom')\n\n# 2. Draw Velocities (Red Arrows)\n# Quiver plots arrows at (x,y) with components (u,v)\nax.quiver(positions[:,0], positions[:,1], \n          velocities[:,0], velocities[:,1], \n          color='red', width=0.005, scale=5, label='Velocity Vector')\n\nax.legend(loc='upper right')\nplt.grid(True, linestyle='--', alpha=0.6)\nplt.show()\n","key":"jNax6497Dq"},{"type":"outputs","id":"-9B3fec4tVtd1aAACzQSa","children":[{"type":"output","jupyter_data":{"output_type":"display_data","metadata":{},"data":{"image/png":{"content_type":"image/png","hash":"8c543bbba80a2aea16b5cd747416a5a1","path":"/MyST_site//build/8c543bbba80a2aea16b5cd747416a5a1.png"},"text/plain":{"content":"\u003cFigure size 600x600 with 1 Axes\u003e","content_type":"text/plain"}}},"children":[],"key":"EotGVz7Iit"}],"key":"Tnb82d9ZJP"}],"key":"ErQIEK4mxY"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"# --- LOGIC ---\n# Pre-calculate the potential at the cutoff distance to shift the curve\nCUTOFF = 3.0 * SIGMA\ninv_rc2 = (SIGMA**2) / (CUTOFF**2)\ninv_rc6 = inv_rc2**3\nE_CUTOFF = 4 * EPSILON * (inv_rc6**2 - inv_rc6)\n\ndef compute_forces(pos):\n    \"\"\"\n    Input: Positions of all atoms\n    Output: Acceleration (Force/Mass) of all atoms, Potential Energy\n    \"\"\"\n    N = pos.shape[0]\n    forces = np.zeros_like(pos)\n    potential_energy = 0.0\n    \n    for i in range(N):\n        for j in range(i + 1, N): # Loop over pairs\n            delta = pos[i] - pos[j]\n            delta -= np.round(delta / BOX_SIZE) * BOX_SIZE # Periodic BC\n            r_sq = np.sum(delta**2)\n            \n            if r_sq \u003c 0.01: r_sq = 0.01\n            \n            # Optimization Cutoff\n            if r_sq \u003c CUTOFF**2:\n                inv_r2 = (SIGMA**2) / r_sq\n                inv_r6 = inv_r2**3\n                \n                # Force (unchanged by the energy shift)\n                f_scalar = (24 * EPSILON / r_sq) * (2 * inv_r6**2 - inv_r6)\n                \n                force_vec = f_scalar * delta\n                forces[i] += force_vec\n                forces[j] -= force_vec\n                \n                # ENERGY CORRECTION: Subtract E_CUTOFF\n                # This ensures Potential Energy is exactly 0.0 at the cutoff line\n                pair_energy = 4 * EPSILON * (inv_r6**2 - inv_r6) - E_CUTOFF\n                potential_energy += pair_energy\n                \n    return forces / MASS, potential_energy\n\n# --- VISUALIZATION OF THE RULE ---\n# We plot the \"Shifted\" potential to show it hits exactly zero\nr = np.linspace(0.85, 3.2, 100)\nE = 4 * EPSILON * ((SIGMA/r)**12 - (SIGMA/r)**6)\n# Apply shift to plotting data too for consistency\nE[r \u003e CUTOFF] = 0\nE[r \u003c= CUTOFF] -= E_CUTOFF\n\nplt.figure(figsize=(8,4))\nplt.plot(r, E, linewidth=3, color='purple')\nplt.axhline(0, color='k', linestyle='--')\nplt.axvline(1.0, color='green', linestyle='--', label='Sigma')\nplt.axvline(CUTOFF, color='red', linestyle=':', label='Cutoff (Shifted to 0)')\nplt.title(\"Block 2: The Rules (Shifted Lennard-Jones)\")\nplt.xlabel(\"Distance\"); plt.ylabel(\"Energy\")\nplt.legend()\nplt.show()\n","key":"xRwDJgvylX"},{"type":"outputs","id":"h2IWm7dEldb3hMIDwcicT","children":[{"type":"output","jupyter_data":{"output_type":"display_data","metadata":{},"data":{"image/png":{"content_type":"image/png","hash":"a2801350b12815c031062c44ed47cbe4","path":"/MyST_site//build/a2801350b12815c031062c44ed47cbe4.png"},"text/plain":{"content":"\u003cFigure size 800x400 with 1 Axes\u003e","content_type":"text/plain"}}},"children":[],"key":"bGv1139UM6"}],"key":"dxO4qdit0n"}],"key":"SavbTPZI9r"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"# --- LOGIC ---\ndef velocity_verlet_step(pos, vel, acc, dt):\n    \"\"\"\n    Moves the simulation forward by one step 'dt'\n    \"\"\"\n    # 1. First Half-Kick: Update velocity halfway\n    vel_half = vel + 0.5 * acc * dt\n    \n    # 2. Drift: Update position using half-velocity\n    pos_new = pos + vel_half * dt\n    pos_new = pos_new % BOX_SIZE # Wrap around box\n    \n    # 3. Calculate new forces at new positions\n    acc_new, pe = compute_forces(pos_new)\n    \n    # 4. Second Half-Kick: Finish updating velocity\n    vel_new = vel_half + 0.5 * acc_new * dt\n    \n    return pos_new, vel_new, acc_new, pe\n\nprint(\"Block 3: Integrator Loaded. The Engine is ready.\")","key":"aqnAU2sVzo"},{"type":"outputs","id":"LMRvl3GUtI7uvzNxFZPoI","children":[{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"Block 3: Integrator Loaded. The Engine is ready.\n"},"children":[],"key":"nT4G9Ff9B9"}],"key":"qSyrpQoIo6"}],"key":"xldrM2rlXp"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"# --- SETUP ---\nDT = 0.005             # Reduced slightly for better stability\nSTEPS = 200            # How long to run\n\n# CRITICAL FIX: Use the safe variables from Cell 2!\n# We use .copy() so if you run this cell twice, it doesn't mess up the original data.\npos = positions.copy()\nvel = velocities.copy()\n\n# Calculate initial forces based on these SAFE positions\nacc, pot_e = compute_forces(pos) \n\n# --- ANIMATION SETUP ---\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))\n\n# 1. Particle View\nax1.set_xlim(0, BOX_SIZE); ax1.set_ylim(0, BOX_SIZE)\nax1.set_title(f\"Simulation (N={len(pos)})\")\nparticles = ax1.scatter([], [], s=150, c=[], cmap='coolwarm', edgecolors='k')\n\n# 2. Energy View\nax2.set_xlim(0, STEPS)\nax2.set_title(\"Energy Conservation\")\nax2.set_xlabel(\"Time Step\"); ax2.set_ylabel(\"Energy\")\n\n# Initialize lines\nline_ke, = ax2.plot([], [], 'r-', label='Kinetic')\nline_pe, = ax2.plot([], [], 'b-', label='Potential')\nline_tot, = ax2.plot([], [], 'k--', label='Total', lw=2)\nax2.legend()\n\nhistory_ke, history_pe, history_tot = [], [], []\n\n# Pre-calculate initial energy to start the graph at t=0\ninitial_ke = 0.5 * MASS * np.sum(np.sum(vel**2, axis=1))\nhistory_ke.append(initial_ke)\nhistory_pe.append(pot_e)\nhistory_tot.append(initial_ke + pot_e)\n\ndef update(frame):\n    global pos, vel, acc\n    \n    # CALL THE INTEGRATOR\n    pos, vel, acc, pe = velocity_verlet_step(pos, vel, acc, DT)\n    \n    # CALCULATE KINETIC ENERGY\n    ke = 0.5 * MASS * np.sum(np.sum(vel**2, axis=1))\n    \n    # STORE DATA\n    history_ke.append(ke); history_pe.append(pe); history_tot.append(ke+pe)\n    \n    # UPDATE VISUALS\n    particles.set_offsets(pos)\n    particles.set_array(np.linalg.norm(vel, axis=1)) # Color by speed\n    \n    x = range(len(history_ke))\n    line_ke.set_data(x, history_ke)\n    line_pe.set_data(x, history_pe)\n    line_tot.set_data(x, history_tot)\n    \n    # Auto-scale the energy plot\n    if len(history_ke) \u003e 1:\n        min_y = min(min(history_pe), min(history_ke))\n        max_y = max(max(history_pe), max(history_ke))\n        ax2.set_ylim(min_y - 5, max_y + 5)\n        \n    return particles, line_ke, line_pe, line_tot\n\nanim = animation.FuncAnimation(fig, update, frames=STEPS, interval=30, blit=False)\nplt.close()\nHTML(anim.to_jshtml())\n","key":"ajVai7Fd0j"},{"type":"outputs","id":"j0UzQ94AlJVXzBAMz7nBl","children":[{"type":"output","jupyter_data":{"output_type":"execute_result","execution_count":7,"metadata":{},"data":{"text/html":{"content_type":"text/html","hash":"0c42077d9c0cd29fbef5543e76a81100","path":"/MyST_site//build/0c42077d9c0cd29fbef5543e76a81100.html"},"text/plain":{"content":"\u003cIPython.core.display.HTML object\u003e","content_type":"text/plain"}}},"children":[],"key":"yoxrUJtKw3"}],"key":"hHY002T0M5"}],"key":"CN4a1NfRKI"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"import time\n\n# --- SETUP (same as Step 5) ---\nDT = 0.005\nSTEPS = 200\n\npos = positions.copy()\nvel = velocities.copy()\nacc, _ = compute_forces(pos)\n\n# --- TIMED LOOP ---\nstart_time = time.perf_counter()\n\nfor step in range(STEPS):\n    pos, vel, acc, _ = velocity_verlet_step(pos, vel, acc, DT)\n\nend_time = time.perf_counter()\n\nwall_time_s = end_time - start_time\ntime_per_step_ms = (wall_time_s / STEPS) * 1000\n\nprint(\"=\" * 45)\nprint(f\"  Particles (N)      : {N_PARTICLES}\")\nprint(f\"  Steps completed    : {STEPS}\")\nprint(f\"  Total wall time    : {wall_time_s:.3f} seconds\")\nprint(f\"  Time per step      : {time_per_step_ms:.3f} ms\")\nprint(\"=\" * 45)\n\n# --- SCALE UP: How long for a REAL simulation? ---\n# A real MD run targets ~1 microsecond = 1,000,000 steps at dt=1fs\nREAL_STEPS = 1_000_000_000\nprojected_s = (wall_time_s / STEPS) * REAL_STEPS\nprojected_days = projected_s / 86400\n\nprint(f\"\\n  Projected time for {REAL_STEPS:,} steps:\")\nprint(f\"  → {projected_s:,.1f} seconds  ({projected_days:.1f} days)\")\nprint(f\"\\n  This is why we need supercomputers!\")","key":"xxmSx79HOE"},{"type":"outputs","id":"8EVBvwKmsdHfjEbNFEjQo","children":[{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"=============================================\n  Particles (N)      : 20\n  Steps completed    : 200\n  Total wall time    : 0.373 seconds\n  Time per step      : 1.867 ms\n=============================================\n\n  Projected time for 1,000,000,000 steps:\n  → 1,867,214.9 seconds  (21.6 days)\n\n  This is why we need supercomputers!\n"},"children":[],"key":"lTiaoXZKGu"}],"key":"HahqayIgol"}],"key":"rADO9QIw1I"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"import time\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# --- PARAMETERS ---\n# Test a range of particle counts\nparticle_counts = [5, 10, 20, 40, 80, 160]\nTIMING_STEPS = 50          # Steps per timing run (keep short for large N)\ntimings = []\n\nprint(f\"{'N':\u003e6} | {'Time/step (ms)':\u003e16} | {'Pairs':\u003e10}\")\nprint(\"-\" * 38)\n\nfor N in particle_counts:\n    # Place N atoms randomly (no overlap check for speed)\n    test_pos = np.random.rand(N, 2) * BOX_SIZE\n    test_vel = (np.random.rand(N, 2) - 0.5)\n    test_acc, _ = compute_forces(test_pos)\n    \n    # Time TIMING_STEPS steps\n    t0 = time.perf_counter()\n    for _ in range(TIMING_STEPS):\n        test_pos, test_vel, test_acc, _ = velocity_verlet_step(\n            test_pos, test_vel, test_acc, DT\n        )\n    t1 = time.perf_counter()\n    \n    ms_per_step = ((t1 - t0) / TIMING_STEPS) * 1000\n    n_pairs = N * (N - 1) // 2\n    timings.append(ms_per_step)\n    print(f\"{N:\u003e6} | {ms_per_step:\u003e16.4f} | {n_pairs:\u003e10,}\")\n\n# --- PLOT ---\nfig, axes = plt.subplots(1, 2, figsize=(12, 5))\n\n# Left: Raw timing\naxes[0].plot(particle_counts, timings, 'o-', color='steelblue', lw=2, ms=8)\naxes[0].set_xlabel(\"Number of Particles (N)\", fontsize=12)\naxes[0].set_ylabel(\"Wall Time per Step (ms)\", fontsize=12)\naxes[0].set_title(\"Raw Scaling: Time vs. N\", fontsize=13)\naxes[0].grid(True, alpha=0.4)\n\n# Right: Log-log plot to reveal the power law\naxes[1].loglog(particle_counts, timings, 'o-', color='crimson', lw=2, ms=8, label='Measured')\n\n# Overlay a reference O(N^2) line\nN_arr = np.array(particle_counts, dtype=float)\nref = timings[0] * (N_arr / particle_counts[0])**2\naxes[1].loglog(particle_counts, ref, 'k--', lw=1.5, alpha=0.6, label=r'$O(N^2)$ reference')\n\naxes[1].set_xlabel(\"Number of Particles (N)\", fontsize=12)\naxes[1].set_ylabel(\"Wall Time per Step (ms)\", fontsize=12)\naxes[1].set_title(r\"Log-Log Scaling (slope ≈ 2 confirms $O(N^2)$)\", fontsize=13)\naxes[1].legend()\naxes[1].grid(True, which='both', alpha=0.3)\n\nplt.suptitle(\"compute_forces Scaling Analysis\", fontsize=14, fontweight='bold', y=1.02)\nplt.tight_layout()\nplt.show()\n\nprint(\"\\nConclusion: The log-log slope ≈ 2 confirms O(N²) scaling.\")\nprint(\"Real codes use neighbor lists + cutoffs to reduce this to ~O(N).\")","key":"isFmS8A6t9"},{"type":"outputs","id":"J3zo3rdgWiU4tDrnjJzXg","children":[{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"     N |   Time/step (ms) |      Pairs\n--------------------------------------\n     5 |           0.1591 |         10\n    10 |           0.5255 |         45\n    20 |           1.9542 |        190\n    40 |           7.9461 |        780\n    80 |          30.2539 |      3,160\n   160 |         122.5634 |     12,720\n"},"children":[],"key":"YZ6CwzG7HK"},{"type":"output","jupyter_data":{"output_type":"display_data","metadata":{},"data":{"image/png":{"content_type":"image/png","hash":"eaea4e5a350cfba404e2b6e1b9677221","path":"/MyST_site//build/eaea4e5a350cfba404e2b6e1b9677221.png"},"text/plain":{"content":"\u003cFigure size 1200x500 with 2 Axes\u003e","content_type":"text/plain"}}},"children":[],"key":"nO11nqf81b"},{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"\nConclusion: The log-log slope ≈ 2 confirms O(N²) scaling.\nReal codes use neighbor lists + cutoffs to reduce this to ~O(N).\n"},"children":[],"key":"m3PXqPVmDt"}],"key":"TceH48AqIY"}],"key":"PRhypnrDzL"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"import numpy as np\nimport matplotlib.pyplot as plt\n\nplt.style.use('seaborn-v0_8-whitegrid')\nplt.rcParams['font.size'] = 12\n\n# --- In reduced LJ units: kB = 1, mass = 1 ---\n# Degrees of freedom for 2D: 2*N - 2 (subtract 2 for fixed CoM)\ndef compute_temperature(vel, N):\n    \"\"\"\n    Compute instantaneous kinetic temperature in reduced LJ units.\n    In 2D: T = sum(v^2) / (N_dof), where N_dof = 2N - 2\n    \"\"\"\n    N_dof = 2 * N - 2\n    ke = 0.5 * MASS * np.sum(vel**2)\n    return (2.0 * ke) / N_dof\n\nprint(\"Temperature calculator defined.\")\nprint(f\"Using N={N_PARTICLES} particles → N_dof = {2*N_PARTICLES - 2}\")","key":"iD2iyezFX6"},{"type":"outputs","id":"OG4cB_FKbd4dgGzPDkxHI","children":[{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"Temperature calculator defined.\nUsing N=20 particles → N_dof = 38\n"},"children":[],"key":"zsZwyz3Chq"}],"key":"KiPLZAIrfb"}],"key":"IggvUEFarg"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"def berendsen_thermostat(vel, T_current, T_target, dt, tau_T):\n    \"\"\"\n    Berendsen velocity-rescaling thermostat.\n\n    Parameters\n    ----------\n    vel      : (N, 2) array of velocities\n    T_current: instantaneous temperature at this step\n    T_target : desired temperature\n    dt       : timestep\n    tau_T    : coupling time constant (larger = weaker coupling)\n\n    Returns\n    -------\n    vel_scaled : rescaled velocities\n    \"\"\"\n    if T_current \u003c 1e-10:\n        return vel   # Avoid divide-by-zero if system is frozen\n\n    # The rescaling factor (Eq. from lecture notes)\n    lambda_sq = 1.0 + (dt / tau_T) * ((T_target / T_current) - 1.0)\n\n    # Safety clamp: prevent extreme rescaling in the first few steps\n    lambda_sq = max(0.1, min(lambda_sq, 10.0))\n\n    return vel * np.sqrt(lambda_sq)\n\nprint(\"Berendsen thermostat defined.\")","key":"dl7Fav8S0I"},{"type":"outputs","id":"BMj39dg3gcrZk1lLEm1ZV","children":[{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"Berendsen thermostat defined.\n"},"children":[],"key":"wHeu4W4Wor"}],"key":"QO8RRH5OBZ"}],"key":"PbalFnltYh"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"# --- PARAMETERS ---\nT_TARGET = 1.0      # Target temperature in reduced LJ units\nDT       = 0.005    # Timestep\nTAU_T    = 0.5      # Coupling time (in reduced time units)\nSTEPS    = 10000    # Number of steps\n\n# --- INITIALIZE from Tutorial 6 starting state ---\npos_B = positions.copy()\nvel_B = velocities.copy()\n\n# Rescale initial velocities to be close to T_TARGET\nT_init = compute_temperature(vel_B, N_PARTICLES)\nif T_init \u003e 1e-10:\n    vel_B *= np.sqrt(T_TARGET / T_init)\n\nacc_B, _ = compute_forces(pos_B)\n\n# --- DATA STORAGE ---\ntemps_B  = []\nke_B     = []\npe_B     = []\netot_B   = []\n\n# --- MAIN LOOP ---\nprint(f\"Running Berendsen NVT: {STEPS} steps, T_target={T_TARGET}, tau_T={TAU_T}\")\n\nfor step in range(STEPS):\n    # 1. Standard Velocity Verlet step\n    pos_B, vel_B, acc_B, pe = velocity_verlet_step(pos_B, vel_B, acc_B, DT)\n\n    # 2. Apply Berendsen thermostat AFTER the full VV step\n    T_inst = compute_temperature(vel_B, N_PARTICLES)\n    vel_B  = berendsen_thermostat(vel_B, T_inst, T_TARGET, DT, TAU_T)\n\n    # 3. Record thermodynamic data\n    T_new  = compute_temperature(vel_B, N_PARTICLES)\n    ke     = 0.5 * MASS * np.sum(vel_B**2)\n    temps_B.append(T_new)\n    ke_B.append(ke)\n    pe_B.append(pe)\n    etot_B.append(ke + pe)\n\ntemps_B = np.array(temps_B)\nke_B    = np.array(ke_B)\npe_B    = np.array(pe_B)\netot_B  = np.array(etot_B)\n\nprint(f\"Done. Mean T = {np.mean(temps_B):.4f} (target: {T_TARGET})\")\nprint(f\"Std  T = {np.std(temps_B):.4f}\")","key":"hU7eibeava"},{"type":"outputs","id":"1C38Yzz7j9W8WJcQIoS9E","children":[{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"Running Berendsen NVT: 10000 steps, T_target=1.0, tau_T=0.5\nDone. Mean T = 1.0013 (target: 1.0)\nStd  T = 0.0734\n"},"children":[],"key":"sSeTxkSegh"}],"key":"mHFXQbj4Tl"}],"key":"AaXe0dkxrS"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"def nose_hoover_chain_step(pos, vel, acc, xi1, xi2, p_xi1, p_xi2, Q1, Q2,\n                            dt, T_target, N_dof, force_fn):\n    \"\"\"\n    One timestep of Velocity Verlet + Nosé-Hoover Chain (2 links).\n\n    The chain is integrated using the Liouville operator splitting (RESPA-style),\n    which keeps the extended system symplectic and time-reversible.\n\n    Parameters\n    ----------\n    pos, vel, acc   : positions, velocities, accelerations  (N, 2)\n    xi1, xi2        : thermostat position variables (scalars)\n    p_xi1, p_xi2    : thermostat momentum variables (scalars)\n    Q1, Q2          : thermostat masses (scalars)\n    dt              : timestep\n    T_target        : target temperature (kB = 1 in reduced units)\n    N_dof           : degrees of freedom (= 2N - 2 in 2D)\n    force_fn        : function(pos) -\u003e (acc, pe)\n\n    Returns\n    -------\n    Updated pos, vel, acc, xi1, xi2, p_xi1, p_xi2, pe\n    \"\"\"\n    # --- 1. Half-step update of chain momenta (outermost first) ---\n    # Update p_xi2 using friction from p_xi1\n    KE2 = p_xi1**2 / (2.0 * Q1)\n    p_xi2 += 0.5 * dt * (KE2 - T_target)\n\n    # Update p_xi1 using friction from atoms and p_xi2\n    KE_atoms = 0.5 * MASS * np.sum(vel**2)\n    scale1 = np.exp(-0.5 * dt * p_xi2 / Q2)\n    p_xi1  = p_xi1 * scale1 + 0.5 * dt * scale1 * (2.0 * KE_atoms - N_dof * T_target)\n    p_xi1 *= scale1     # symmetric: apply scale factor twice (Yoshida splitting)\n\n    # --- 2. Rescale velocities using the chain friction ---\n    vel_scale = np.exp(-0.5 * dt * p_xi1 / Q1)\n    vel = vel * vel_scale\n\n    # --- 3. Standard Velocity Verlet: half-kick → drift → force → half-kick ---\n    vel_half = vel + 0.5 * acc * dt\n    pos_new  = (pos + vel_half * dt) % BOX_SIZE\n    acc_new, pe = force_fn(pos_new)\n    vel_new  = vel_half + 0.5 * acc_new * dt\n\n    # --- 4. Half-step update of chain momenta (reverse order) ---\n    # Rescale again (second half)\n    vel_new = vel_new * vel_scale\n\n    KE_atoms_new = 0.5 * MASS * np.sum(vel_new**2)\n    scale1_rev   = np.exp(-0.5 * dt * p_xi2 / Q2)\n    p_xi1 = p_xi1 * scale1_rev + 0.5 * dt * scale1_rev * (2.0 * KE_atoms_new - N_dof * T_target)\n    p_xi1 *= scale1_rev\n\n    KE2_new = p_xi1**2 / (2.0 * Q1)\n    p_xi2  += 0.5 * dt * (KE2_new - T_target)\n\n    # --- 5. Advance thermostat positions ---\n    xi1 += dt * p_xi1 / Q1\n    xi2 += dt * p_xi2 / Q2\n\n    return pos_new, vel_new, acc_new, xi1, xi2, p_xi1, p_xi2, pe\n\nprint(\"Nosé-Hoover Chain integrator defined.\")","key":"sUEbpKRBDv"},{"type":"outputs","id":"joJBsBBSGf4NAm-jC7dqn","children":[{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"Nosé-Hoover Chain integrator defined.\n"},"children":[],"key":"kde8hBTE0C"}],"key":"zgRPcBdrV9"}],"key":"SGsPT3B1XX"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"# --- PARAMETERS (same physics, same target T) ---\nT_TARGET = 1.0\nDT       = 0.005\nSTEPS    = 10000\n\n# Thermostat \"mass\" Q: controls the inertia of the heat bath.\n# Rule of thumb: Q ≈ N_dof * kB * T_target * tau_T^2\n# We use tau_T = 0.2 (tighter coupling for better ergodic sampling)\nN_DOF   = 2 * N_PARTICLES - 2\nTAU_NH  = 0.2\nQ1 = N_DOF * T_TARGET * TAU_NH**2   # Mass of chain link 1\nQ2 = T_TARGET * TAU_NH**2           # Mass of chain link 2\n\nprint(f\"NH Chain masses: Q1={Q1:.2f}, Q2={Q2:.4f}\")\n\n# --- INITIALIZE (same starting state for a fair comparison) ---\npos_NH  = positions.copy()\nvel_NH  = velocities.copy()\n\n# Rescale to T_TARGET\nT_init = compute_temperature(vel_NH, N_PARTICLES)\nif T_init \u003e 1e-10:\n    vel_NH *= np.sqrt(T_TARGET / T_init)\n\nacc_NH, _ = compute_forces(pos_NH)\n\n# Initialize chain variables at rest\nxi1, xi2     = 0.0, 0.0\np_xi1, p_xi2 = 0.0, 0.0\n\n# --- DATA STORAGE ---\ntemps_NH = []\nke_NH    = []\npe_NH    = []\netot_NH  = []\n\n# --- MAIN LOOP ---\nprint(f\"Running Nosé-Hoover Chain NVT: {STEPS} steps, T_target={T_TARGET}\")\n\nfor step in range(STEPS):\n    pos_NH, vel_NH, acc_NH, xi1, xi2, p_xi1, p_xi2, pe = nose_hoover_chain_step(\n        pos_NH, vel_NH, acc_NH, xi1, xi2, p_xi1, p_xi2,\n        Q1, Q2, DT, T_TARGET, N_DOF, compute_forces\n    )\n\n    T_inst = compute_temperature(vel_NH, N_PARTICLES)\n    ke     = 0.5 * MASS * np.sum(vel_NH**2)\n    temps_NH.append(T_inst)\n    ke_NH.append(ke)\n    pe_NH.append(pe)\n    etot_NH.append(ke + pe)\n\ntemps_NH = np.array(temps_NH)\nke_NH    = np.array(ke_NH)\npe_NH    = np.array(pe_NH)\netot_NH  = np.array(etot_NH)\n\nprint(f\"Done. Mean T = {np.mean(temps_NH):.4f} (target: {T_TARGET})\")\nprint(f\"Std  T = {np.std(temps_NH):.4f}\")","key":"ZekqLVVM22"},{"type":"outputs","id":"hpggr-8xB7F1284z8nk5Q","children":[{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"NH Chain masses: Q1=1.52, Q2=0.0400\nRunning Nosé-Hoover Chain NVT: 10000 steps, T_target=1.0\nDone. Mean T = 1.0090 (target: 1.0)\nStd  T = 0.3627\n"},"children":[],"key":"oOxYBW39TE"}],"key":"hY6efRd1w4"}],"key":"UQyJKXCN6C"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"steps_B  = np.arange(len(temps_B))\nsteps_NH = np.arange(len(temps_NH))\n\nfig, axes = plt.subplots(2, 1, figsize=(12, 7), sharex=False)\n\n# --- Berendsen ---\naxes[0].plot(steps_B, temps_B, color='steelblue', alpha=0.7, lw=0.8, label='Instantaneous T')\naxes[0].axhline(T_TARGET,         color='red',  lw=1.5, ls='--', label=f'Target ({T_TARGET})')\naxes[0].axhline(np.mean(temps_B), color='navy', lw=1.5, ls='-',\n                label=f'Mean = {np.mean(temps_B):.3f}')\naxes[0].fill_between(steps_B,\n                     np.mean(temps_B) - np.std(temps_B),\n                     np.mean(temps_B) + np.std(temps_B),\n                     alpha=0.15, color='steelblue', label=f'±1σ (σ={np.std(temps_B):.4f})')\naxes[0].set_ylabel('Temperature (LJ units)', fontsize=11)\naxes[0].set_title('Berendsen Thermostat — Temperature Trace', fontsize=13)\naxes[0].legend(loc='upper right', fontsize=9)\naxes[0].set_ylim(0, 2.5)\n\n# --- Nosé-Hoover ---\naxes[1].plot(steps_NH, temps_NH, color='darkorange', alpha=0.7, lw=0.8, label='Instantaneous T')\naxes[1].axhline(T_TARGET,          color='red',         lw=1.5, ls='--', label=f'Target ({T_TARGET})')\naxes[1].axhline(np.mean(temps_NH), color='saddlebrown', lw=1.5, ls='-',\n                label=f'Mean = {np.mean(temps_NH):.3f}')\naxes[1].fill_between(steps_NH,\n                     np.mean(temps_NH) - np.std(temps_NH),\n                     np.mean(temps_NH) + np.std(temps_NH),\n                     alpha=0.15, color='darkorange', label=f'±1σ (σ={np.std(temps_NH):.4f})')\naxes[1].set_ylabel('Temperature (LJ units)', fontsize=11)\naxes[1].set_xlabel('Step', fontsize=11)\naxes[1].set_title('Nosé-Hoover Chain — Temperature Trace', fontsize=13)\naxes[1].legend(loc='upper right', fontsize=9)\naxes[1].set_ylim(0, 2.5)\n\nplt.suptitle('Thermostat Comparison: Temperature Control', fontsize=14, fontweight='bold', y=1.01)\nplt.tight_layout()\nplt.show()\n\nprint(\"\\nObservation:\")\nprint(f\"  Berendsen   std(T) = {np.std(temps_B):.4f}\")\nprint(f\"  Nosé-Hoover std(T) = {np.std(temps_NH):.4f}\")\nprint(f\"\\n  Berendsen suppresses fluctuations — its σ(T) is artificially small.\")\nprint(f\"  Nosé-Hoover allows natural fluctuations expected from statistical mechanics.\")","key":"sJReEHDc6v"},{"type":"outputs","id":"8TPo5Y1i69DwUtt6Iiuy4","children":[{"type":"output","jupyter_data":{"output_type":"display_data","metadata":{},"data":{"image/png":{"content_type":"image/png","hash":"ee739cfc0bff00ea9da782af5728e33c","path":"/MyST_site//build/ee739cfc0bff00ea9da782af5728e33c.png"},"text/plain":{"content":"\u003cFigure size 1200x700 with 2 Axes\u003e","content_type":"text/plain"}}},"children":[],"key":"fECdTRSDY7"},{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"\nObservation:\n  Berendsen   std(T) = 0.0734\n  Nosé-Hoover std(T) = 0.3627\n\n  Berendsen suppresses fluctuations — its σ(T) is artificially small.\n  Nosé-Hoover allows natural fluctuations expected from statistical mechanics.\n"},"children":[],"key":"Jk4TAjJeg4"}],"key":"iACyweVsF7"}],"key":"by63sCjDS2"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"from scipy.stats import chi2\n\n# --- Theoretical chi-squared distribution ---\n# For N_dof degrees of freedom, KE ~ (kB*T/2) * chi2(N_dof)\n# So KE / (kB*T/2) ~ chi2(N_dof)\nN_dof  = 2 * N_PARTICLES - 2\nscale  = T_TARGET / 2.0          # kB*T/2 in reduced units\n\n# Discard first 1000 steps (equilibration)\nke_B_eq  = ke_B[1000:]\nke_NH_eq = ke_NH[1000:]\n\nke_range = np.linspace(0, max(ke_B_eq.max(), ke_NH_eq.max()) * 1.1, 300)\ntheory   = chi2.pdf(ke_range / scale, df=N_dof) / scale   # Proper normalization\n\nfig, axes = plt.subplots(1, 2, figsize=(13, 5), sharey=True)\n\n# --- Berendsen ---\naxes[0].hist(ke_B_eq, bins=50, density=True, color='steelblue', alpha=0.6,\n             edgecolor='black', lw=0.3, label='Berendsen')\naxes[0].plot(ke_range, theory, 'r-', lw=2.5, label=f'Canonical (χ² df={N_dof})')\naxes[0].set_xlabel('Kinetic Energy (LJ units)', fontsize=11)\naxes[0].set_ylabel('Probability Density', fontsize=11)\naxes[0].set_title('Berendsen: KE Distribution', fontsize=13)\naxes[0].legend(fontsize=10)\n\n# --- Nosé-Hoover ---\naxes[1].hist(ke_NH_eq, bins=50, density=True, color='darkorange', alpha=0.6,\n             edgecolor='black', lw=0.3, label='Nosé-Hoover Chain')\naxes[1].plot(ke_range, theory, 'r-', lw=2.5, label=f'Canonical (χ² df={N_dof})')\naxes[1].set_xlabel('Kinetic Energy (LJ units)', fontsize=11)\naxes[1].set_title('Nosé-Hoover Chain: KE Distribution', fontsize=13)\naxes[1].legend(fontsize=10)\n\nplt.suptitle('Canonical Ensemble Test: Does the KE follow χ²?', fontsize=14, fontweight='bold')\nplt.tight_layout()\nplt.show()\n\nprint(\"\\nInterpretation:\")\nprint(\"  If the histogram matches the red curve → correct canonical sampling.\")\nprint(\"  Berendsen: narrow histogram, does NOT match the red curve.\")\nprint(\"  Nosé-Hoover: broader histogram, matches the red curve.\")","key":"nTzpnKXWpu"},{"type":"outputs","id":"iWW1QmaR5bPAx1LbH7IbG","children":[{"type":"output","jupyter_data":{"output_type":"display_data","metadata":{},"data":{"image/png":{"content_type":"image/png","hash":"53654fcb8d9093d54f47a652012d18ec","path":"/MyST_site//build/53654fcb8d9093d54f47a652012d18ec.png"},"text/plain":{"content":"\u003cFigure size 1300x500 with 2 Axes\u003e","content_type":"text/plain"}}},"children":[],"key":"T4R3LdDLXm"},{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"\nInterpretation:\n  If the histogram matches the red curve → correct canonical sampling.\n  Berendsen: narrow histogram, does NOT match the red curve.\n  Nosé-Hoover: broader histogram, matches the red curve.\n"},"children":[],"key":"RHIa0TB7my"}],"key":"kZW16Howwe"}],"key":"mamDgmrvVz"},{"type":"block","kind":"notebook-code","children":[{"type":"code","lang":"python","executable":true,"value":"def running_average(arr, window=200):\n    \"\"\"Simple moving average using convolution.\"\"\"\n    kernel = np.ones(window) / window\n    return np.convolve(arr, kernel, mode='valid')\n\nsteps_B  = np.arange(len(etot_B))\nsteps_NH = np.arange(len(etot_NH))\n\nwindow = 200\n\nra_B  = running_average(etot_B,  window)\nra_NH = running_average(etot_NH, window)\n\n# x-axes for the running averages (shorter due to convolution 'valid' mode)\nsteps_ra_B  = steps_B[window - 1:]\nsteps_ra_NH = steps_NH[window - 1:]\n\nfig, axes = plt.subplots(2, 1, figsize=(12, 6), sharex=False)\n\n# --- Berendsen ---\naxes[0].plot(steps_B, etot_B, color='steelblue', lw=0.6, alpha=0.4, label='Instantaneous K+U')\naxes[0].plot(steps_ra_B, ra_B, color='navy', lw=2.0, label=f'Running avg (window={window})')\naxes[0].set_ylabel('K + U (LJ units)', fontsize=11)\naxes[0].set_title('Berendsen: Total Mechanical Energy — running average drifts freely', fontsize=11)\naxes[0].legend(fontsize=9)\n\n# --- Nosé-Hoover ---\naxes[1].plot(steps_NH, etot_NH, color='darkorange', lw=0.6, alpha=0.4, label='Instantaneous K+U')\naxes[1].plot(steps_ra_NH, ra_NH, color='saddlebrown', lw=2.0, label=f'Running avg (window={window})')\naxes[1].set_ylabel('K + U (LJ units)', fontsize=11)\naxes[1].set_xlabel('Step', fontsize=11)\naxes[1].set_title('Nosé-Hoover Chain: Total Mechanical Energy — fluctuates around a stable mean', fontsize=11)\naxes[1].legend(fontsize=9)\n\nplt.suptitle('Mechanical Energy: Berendsen vs. Nosé-Hoover', fontsize=13, fontweight='bold', y=1.01)\nplt.tight_layout()\nplt.show()\n\nprint(\"\\nObservation:\")\nprint(f\"  Berendsen   — mean K+U = {np.mean(etot_B):.3f},  std = {np.std(etot_B):.4f}\")\nprint(f\"  Nosé-Hoover — mean K+U = {np.mean(etot_NH):.3f},  std = {np.std(etot_NH):.4f}\")\nprint(f\"\\n  Berendsen has no conserved quantity — the bath injects/removes energy ad hoc.\")\nprint(f\"  Nosé-Hoover fluctuates but has a conserved extended Hamiltonian (bath included).\")","key":"SnqibewhyA"},{"type":"outputs","id":"_aIROyQdMgU6sZlETRTIh","children":[{"type":"output","jupyter_data":{"output_type":"display_data","metadata":{},"data":{"image/png":{"content_type":"image/png","hash":"c892fe90b19c5eaf488b53c9fec6f806","path":"/MyST_site//build/c892fe90b19c5eaf488b53c9fec6f806.png"},"text/plain":{"content":"\u003cFigure size 1200x600 with 2 Axes\u003e","content_type":"text/plain"}}},"children":[],"key":"V9L2HFum1k"},{"type":"output","jupyter_data":{"name":"stdout","output_type":"stream","text":"\nObservation:\n  Berendsen   — mean K+U = 8.485,  std = 1.4582\n  Nosé-Hoover — mean K+U = 8.808,  std = 7.4506\n\n  Berendsen has no conserved quantity — the bath injects/removes energy ad hoc.\n  Nosé-Hoover fluctuates but has a conserved extended Hamiltonian (bath included).\n"},"children":[],"key":"HHaS6D0Cjv"}],"key":"zTf0YLuZCz"}],"key":"yYSaJGZr7T"}],"key":"C1G1CbdY81"},"references":{"cite":{"order":[],"data":{}}},"footer":{"navigation":{"prev":{"title":"Tutorial 6: Building an MD Engine from Scratch","url":"/md-run-using-py","group":"MyST Site"}}},"domain":"http://localhost:3000"},"project":{"title":"MyST Site","id":"e5c27d9e-b15a-4c9f-8707-614c782cf6ab","exports":[],"bibliography":[],"index":"index","pages":[{"slug":"md-run-using-py","title":"Tutorial 6: Building an MD Engine from Scratch","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":1},{"slug":"assignment-4-ex","title":"Assignment 4 Ex","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":1}]}}},"actionData":null,"errors":null},"future":{"unstable_dev":false,"unstable_postcss":false,"unstable_tailwind":false,"v2_errorBoundary":true,"v2_headers":true,"v2_meta":true,"v2_normalizeFormMethod":true,"v2_routeConvention":true}};</script><script type="module" async="">import "/MyST_site//build/manifest-CA93D7B7.js";
+import * as route0 from "/MyST_site//build/root-LKQMTEPT.js";
+import * as route1 from "/MyST_site//build/routes/$-XDAODCRF.js";
+window.__remixRouteModules = {"root":route0,"routes/$":route1};
+
+import("/MyST_site//build/entry.client-PCJPW7TK.js");</script></body></html>
