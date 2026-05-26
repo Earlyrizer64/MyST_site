@@ -1,1 +1,1 @@
-import{a}from"/build/_shared/chunk-3TGUKLBR.js";import"/build/_shared/chunk-CBDDV5MN.js";import"/build/_shared/chunk-OZE3FFNP.js";export default a();
+import{a}from"/MyST_site//build/_shared/chunk-3TGUKLBR.js";import"/MyST_site//build/_shared/chunk-CBDDV5MN.js";import"/MyST_site//build/_shared/chunk-OZE3FFNP.js";export default a();
