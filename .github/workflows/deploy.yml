@@ -15,11 +15,16 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       - name: Setup micromamba
         uses: mamba-org/setup-micromamba@v2
         with:
           environment-name: myst
-          create-args: python=3.11 mystmd
+          create-args: python=3.11 mystmd jupyterlite-core jupyterlite-pyodide-kernel
 
       - name: Set BASE_URL
         run: echo "BASE_URL=/MyST_site/" >> $GITHUB_ENV
