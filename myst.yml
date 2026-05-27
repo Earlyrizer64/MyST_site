@@ -4,10 +4,11 @@ project:
   title: MyST Site
   id: e5c27d9e-b15a-4c9f-8707-614c782cf6ab
   jupyter: lite
+  resources:
+    - lj_widget.html
 
 site:
   template: book-theme
-  static_path: _static
   toc:
     - file: index.md
     - file: 06_MD_run_using_py.md
