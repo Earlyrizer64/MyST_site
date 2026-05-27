@@ -34,6 +34,9 @@ jobs:
         shell: bash -l {0}
         run: myst build --html
 
+      - name: Copy static HTML files
+        run: cp lj_widget.html _build/html/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
