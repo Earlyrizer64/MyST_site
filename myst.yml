@@ -3,7 +3,7 @@ version: 1
 project:
   title: MyST Site
   id: e5c27d9e-b15a-4c9f-8707-614c782cf6ab
-  jupyter: jupyterlite
+  jupyter: lite
 
 site:
   template: book-theme
