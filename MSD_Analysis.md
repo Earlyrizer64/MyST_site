@@ -8,7 +8,9 @@ kernelspec:
 # MSD Analysis
 
 Hopefully you obtained your data files from the simulation
-If not, use the linked files below
+
+
+If not, use the linked files below; Open the link and right-click and save as and change the file extension to say .dat
 
 | <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_300.dat"> <img src="https://img.shields.io/badge/msd_300-blue" width="100" height="50"> </a> | <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_400.dat"> <img src="https://img.shields.io/badge/msd_400-blue" width="100" height="50"> </a> |
 | -- | -- |
@@ -33,7 +35,6 @@ upload_2 = widgets.FileUpload(accept='.dat', multiple=False)
 display(upload_2)
 print("Upload your msd_400.dat file above.")
 ```
-
 
 
 
@@ -219,4 +220,3 @@ print(f"\nPhysical Interpretation:")
 print(f"  Increasing temperature by {(400-300)/300*100:.0f}% increased diffusion by {(D_400_cm2_s/D_300_cm2_s-1)*100:.0f}%")
 print("="*60)
 ```
-
