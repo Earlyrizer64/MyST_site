@@ -84,7 +84,7 @@ print(f"Using {len(time_fit_400)} points for 400K fit (t > {t_min} ps)")
 ```
 
 ```{code-cell} python
-# Convert time back to femtoseconds for fitting
+#Cell 3: Convert time back to femtoseconds for fitting
 time_fit_300_fs = time_fit_300 * 1000.0  # Convert ps to fs
 time_fit_400_fs = time_fit_400 * 1000.0  # Convert ps to fs
 
@@ -110,7 +110,7 @@ print(f"  Intercept = {intercept_400:.6f} Ų")
 ```
 
 ```{code-cell} python
-# Calculate diffusion coefficient in Ų/fs
+# Cell 4: Calculate diffusion coefficient in Ų/fs
 D_300_A2_fs = slope_300 / 6.0
 D_400_A2_fs = slope_400 / 6.0
 
@@ -140,6 +140,7 @@ print("="*60)
 ```
 
 ```{code-cell} python
+# Cell 5: Plot Figures
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
 
 # --- Plot 300K ---
@@ -176,7 +177,7 @@ print("\nPlot saved as 'msd_analysis.png'")
 ```
 
 ```{code-cell} python
-# Calculate R-squared for both fits
+# Cell 6: Calculate R-squared for both fits
 def calculate_r2(y_data, y_fit):
     """Calculate coefficient of determination R^2"""
     ss_res = np.sum((y_data - y_fit)**2)  # Residual sum of squares
@@ -203,6 +204,7 @@ print("="*60)
 ```
 
 ```{code-cell} python
+# Cell 7: Display Final Results
 print("\n" + "="*60)
 print("FINAL RESULTS FOR SUBMISSION")
 print("="*60)
