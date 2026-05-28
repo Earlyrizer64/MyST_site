@@ -10,7 +10,7 @@ kernelspec:
 Hopefully you obtained your data files from the simulation
 If not, use the linked files below
 
-| <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_300.dat"> <img src="https://img.shields.io/badge/msd_300-blue" width="100" height="50"> </a> | <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_400.dat"> <img src="https://img.shields.io/badge/msd_400-blue" width="100" height="50"> </a> |
+| <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_300.dat" download="msd_300.dat"> <img src="https://img.shields.io/badge/msd_300-blue" width="100" height="50"> </a> | <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_400.dat" download="msd_400.dat"> <img src="https://img.shields.io/badge/msd_400-blue" width="100" height="50"> </a> |
 | -- | -- |
 | msd_300.dat | msd_400.dat |
 
@@ -30,7 +30,7 @@ display(upload_1)
 print("Upload your msd_300.dat file above.")
 
 upload_2 = widgets.FileUpload(accept='.dat', multiple=False)
-dsplay(upload_1)
+display(upload_2)
 print("Upload your msd_400.dat file above.")
 ```
 
