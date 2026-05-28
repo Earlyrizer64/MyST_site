@@ -26,11 +26,11 @@ import numpy as np
 import io
 
 upload_1 = widgets.FileUpload(accept='.dat', multiple=False)
-display(upload)
+display(upload_1)
 print("Upload your msd_300.dat file above.")
 
 upload_2 = widgets.FileUpload(accept='.dat', multiple=False)
-dsplay(upload)
+dsplay(upload_1)
 print("Upload your msd_400.dat file above.")
 ```
 
