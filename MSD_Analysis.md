@@ -38,7 +38,7 @@ print("Upload your msd_400.dat file above.")
 
 
 ```{code-cell} python
-# Read / Collect Data from user input files
+# Cell 2: Read / Collect Data from user input files
 
 content_1 = upload_1.value[0]['content']
 text_1 = io.BytesIO(bytes(content_1)).read().decode('utf-8')
@@ -51,7 +51,7 @@ content_2 = upload_2.value[0]['content']
 text_2 = io.BytesIO(bytes(content_2)).read().decode('utf-8')
 
 # Parse — skip comment lines starting with #
-lines = [l for l in text_1.strip().split('\n') if not l.startswith('#')]
+lines = [l for l in text_2.strip().split('\n') if not l.startswith('#')]
 data_400 = np.array([list(map(float, l.split())) for l in lines if l.strip()])
 
 timestep_300 = data_300[:, 0] # femptosecond (Default time for Real Units)
