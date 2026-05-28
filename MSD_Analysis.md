@@ -10,7 +10,7 @@ kernelspec:
 Hopefully you obtained your data files from the simulation
 If not, use the linked files below
 
-| <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_300.dat" download="msd_300.dat"> <img src="https://img.shields.io/badge/msd_300-blue" width="100" height="50"> </a> | <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_400.dat" download="msd_400.dat"> <img src="https://img.shields.io/badge/msd_400-blue" width="100" height="50"> </a> |
+| <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_300.dat"> <img src="https://img.shields.io/badge/msd_300-blue" width="100" height="50"> </a> | <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_400.dat"> <img src="https://img.shields.io/badge/msd_400-blue" width="100" height="50"> </a> |
 | -- | -- |
 | msd_300.dat | msd_400.dat |
 
@@ -40,14 +40,14 @@ print("Upload your msd_400.dat file above.")
 ```{code-cell} python
 # Read / Collect Data from user input files
 
-content_1 = upload1.value[0]['content']
+content_1 = upload_1.value[0]['content']
 text_1 = io.BytesIO(bytes(content_1)).read().decode('utf-8')
 
 # Parse — skip comment lines starting with #
 lines = [l for l in text_1.strip().split('\n') if not l.startswith('#')]
 data_300 = np.array([list(map(float, l.split())) for l in lines if l.strip()])
 
-content_2 = upload2.value[0]['content']
+content_2 = upload_2.value[0]['content']
 text_2 = io.BytesIO(bytes(content_2)).read().decode('utf-8')
 
 # Parse — skip comment lines starting with #
