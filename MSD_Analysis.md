@@ -10,7 +10,9 @@ kernelspec:
 Hopefully you obtained your data files from the simulation
 
 
-If not, use the linked files below; Open the link and right-click and save as and change the file extension to say .dat
+If not, use the linked files below
+
+Open the link and right-click and save as and change the file extension to say .dat
 
 | <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_300.dat"> <img src="https://img.shields.io/badge/msd_300-blue" width="100" height="50"> </a> | <a href="https://github.com/Earlyrizer64/MyST_site/raw/main/Reference_Files/MSD_Analysis_Ex/msd_400.dat"> <img src="https://img.shields.io/badge/msd_400-blue" width="100" height="50"> </a> |
 | -- | -- |
