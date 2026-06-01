@@ -25,11 +25,11 @@ jobs:
         uses: mamba-org/setup-micromamba@v2
         with:
           environment-name: myst
-          create-args: python=3.11 mystmd jupyterlite-core jupyterlite-pyodide-kernel
+          create-args: python=3.11 mystmd jupyterlite-core jupyterlite-pyodide-kernel nbconvert
 
       - name: Set BASE_URL
         run: echo "BASE_URL=/MyST_site/" >> $GITHUB_ENV
-        
+
       - name: Clear notebook outputs
         shell: bash -l {0}
         run: |
@@ -39,7 +39,7 @@ jobs:
         shell: bash -l {0}
         run: myst build --html
 
-      - name: Copy static HTML files
+      - name: Copy static files
         run: cp lj_widget.html _build/html/
 
       - name: Upload artifact
