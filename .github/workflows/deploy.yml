@@ -31,12 +31,12 @@ jobs:
         run: echo "BASE_URL=/MyST_site/" >> $GITHUB_ENV
 
       - name: Clear notebook outputs
-        shell: bash -l {0}
+        shell: "bash -l {0}"
         run: |
           jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to notebook --inplace Assignment_4_Ex.ipynb
 
       - name: Build site
-        shell: bash -l {0}
+        shell: "bash -l {0}"
         run: myst build --html
 
       - name: Copy static files
