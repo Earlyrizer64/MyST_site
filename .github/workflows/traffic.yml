@@ -2,8 +2,8 @@ name: Collect Traffic Data
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # runs every day at midnight UTC
-  workflow_dispatch:       # allows manual trigger
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -20,30 +20,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p traffic_data
-
-          # Fetch views
           curl -s -H "Authorization: token $GITHUB_TOKEN" \
             "https://api.github.com/repos/Earlyrizer64/MyST_site/traffic/views" \
-            >> traffic_data/views_raw.json
-
-          # Fetch unique visitors
-          curl -s -H "Authorization: token $GITHUB_TOKEN" \
-            "https://api.github.com/repos/Earlyrizer64/MyST_site/traffic/views" \
-            | python3 -c "
-import sys, json, csv, os
-from datetime import datetime
-
-data = json.load(sys.stdin)
-file = 'traffic_data/views.csv'
-exists = os.path.isfile(file)
-
-with open(file, 'a', newline='') as f:
-    writer = csv.writer(f)
-    if not exists:
-        writer.writerow(['date', 'views', 'unique_visitors'])
-    for entry in data.get('views', []):
-        writer.writerow([entry['timestamp'][:10], entry['count'], entry['uniques']])
-"
+            | python3 traffic_data/collect_traffic.py
 
       - name: Commit traffic data
         run: |
