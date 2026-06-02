@@ -1,4 +1,4 @@
-# Example of More Advanced Features
+# Zed Example of More Advanced Features
 
 ***
 
