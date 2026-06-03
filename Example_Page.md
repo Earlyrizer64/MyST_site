@@ -81,8 +81,8 @@ Here's a sentence with a footnote. [^1]
 
 ### Subscript
 
-H~2~O
+H{sub}`2`O
 
 ### Superscript
 
-X^2^
+X{sup}`2`
