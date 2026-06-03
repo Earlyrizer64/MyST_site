@@ -6,6 +6,8 @@ project:
   jupyter: lite
   resources:
     - lj_widget.html
+  exclude:
+    - Example_Page_3.md
 
 site:
   template: book-theme
@@ -16,4 +18,6 @@ site:
     - file: Testing_Lite.md
     - file: Interactive_Graph.md
     - file: Example_Page.md
-    - file: Example_Page_3.md
+    - file: Example_Page_2.md
+    - file: MSD_Analysis.md
+    #- file: Example_Page_3.md
