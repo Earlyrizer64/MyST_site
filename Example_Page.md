@@ -8,7 +8,7 @@
 
 ### Bold
 
-** bold text **
+**bold text**
 
 ### Italic
 
