@@ -1,4 +1,4 @@
-# Example of More Advanced Features
+# Example of More Features
 
 ***
 
