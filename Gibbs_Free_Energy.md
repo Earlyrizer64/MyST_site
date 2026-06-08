@@ -181,11 +181,11 @@ print(f"Enthalpy of H₂O at 298 K: {H_H2O_kJ:.4f} kJ/mol")
 
 ```
 
-**Calculates the same information as cell above for H2**
+**Calculates the same information as cell above for H{sub}`2`**
 
 
 ```python
-# Cell 6: Calculate Enthalpy for H2
+# Cell 6: Calculate Enthalpy for H{sub}`2`
 
 atoms_H2 = molecule('H2')
 atoms_H2.calc = calc_mol
@@ -217,11 +217,11 @@ print(f"H2 Enthalpy at 298 K: {H_H2_kJ:.4f} kJ/mol")
 
 ```
 
-**Calculates the same information as cell above for O2**
+**Calculates the same information as cell above for O{sub}`2`**
 
 
 ```python
-# Cell 7: Calculate Enthalpy for O2
+# Cell 7: Calculate Enthalpy for O{sub}`2`
 
 atoms_O2 = molecule('O2')
 atoms_O2.calc = calc_mol
@@ -253,10 +253,10 @@ print(f"O2 Enthalpy at 298 K: {H_O2_kJ:.4f} kJ/mol")
 
 ```
 
-**Calculates Change in Enthalpy for H20 compared to its elements.  To get enthalpy values, you need to look at molecules, not elements.  So that is why we calculate properties for H2 and O2.  We only need enthalpies for 2 Hydrogen and 1 Oxygen.  So, for the Change in enthalpy equation, we use 1 H2 and ½ O2, this way we are comparing the same amount of each element to maintain the 1 mole of H20.**
+**Calculates Change in Enthalpy for H{sub}`2`O compared to its elements.  To get enthalpy values, you need to look at molecules, not elements.  So that is why we calculate properties for H{sub}`2` and O{sub}`2`.  We only need enthalpies for 2 Hydrogen and 1 Oxygen.  So, for the Change in enthalpy equation, we use 1 H{sub}`2` and $\frac{1}{2}$ O{sub}`2`, this way we are comparing the same amount of each element to maintain the 1 mole of H{sub}`2`O.**
 
 ```python
-# Cell 8: Calculate Enthalpy Change for H2O (g) using H2 and O2 and Error
+# Cell 8: Calculate Enthalpy Change for H{sub}`2`O (g) using H{sub}`2` and O{sub}`2` and Error
 
 dH_Exp = H_H2O_kJ - (H_H2_kJ + 0.5 * H_O2_kJ)
 dH_Act = -241.82
