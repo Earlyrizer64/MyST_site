@@ -7,7 +7,7 @@ project:
   resources:
     - lj_widget.html
   exclude:
-    #- 
+    - Reference_Files/*
 
 site:
   template: book-theme
