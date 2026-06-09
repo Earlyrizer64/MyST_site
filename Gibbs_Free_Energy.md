@@ -72,7 +72,7 @@ LJP is more physically accurate when viewing reults than ML models.  LJP was cre
 | Data Requirements | Low | High |
 | Accuracy with Complex Chemistry | Limited | Can be Extremely High |
 
-Also remember that a Machine Learning Potential is only accurate in what it is trained in, and struggles to extrapolate data accurately.  They aren't any fundamental equations with MLPs, they can be seen as a black box.  
+Also remember that a Machine Learning Potential is only accurate in what it is trained in, and struggles to extrapolate data accurately.  There aren't any fundamental equations with MLPs, they can be seen as a black box.  
 
 ***
 
