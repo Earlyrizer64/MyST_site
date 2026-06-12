@@ -30,10 +30,10 @@ jobs:
       - name: Set BASE_URL
         run: echo "BASE_URL=/MyST_site/" >> $GITHUB_ENV
 
-      - #name: Clear notebook outputs
-        #shell: "bash -l {0}"
-        #run: |
-          #jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to notebook --inplace Assignment_4_Example.ipynb
+      - name: Clear notebook outputs
+        shell: "bash -l {0}"
+        run: |
+          jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to notebook --inplace Assignment_4_Example.ipynb
 
 
       - name: Build site
