@@ -33,7 +33,7 @@ jobs:
       - name: Clear notebook outputs
         shell: "bash -l {0}"
         run: |
-          jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to notebook --inplace Assignment_4_Example.ipynb
+          jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to notebook --inplace 
 
 
       - name: Build site
