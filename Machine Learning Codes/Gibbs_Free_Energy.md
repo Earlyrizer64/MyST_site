@@ -8,7 +8,7 @@ Gibbs Free Energy: Determines if a reaction will occur spontaneously (no externa
 
 | Spontaneous Reaction: Iron Oxide (Rust) | Nonspontaneous Reaction: Separating of water (Electrolysis) |
 | -- | -- |
-| <img src="../Images/Gibbs_Free_Energy/Spontaneous_Reaction.jpg" width="400" height="400"> | <img src="Images/Gibbs_Free_Energy/Nonspontaneous_Reaction.png" width="400" height="400"> | 
+| <img src="../Images/Gibbs_Free_Energy/Spontaneous_Reaction.jpg" width="600" height="400"> | <img src="../Images/Gibbs_Free_Energy/Nonspontaneous_Reaction.png" width="400" height="400"> | 
 | Water on iron interacts with oxygen to oxidize the iron and cause iron oxide or rust.  This process requires no external energy which makes it a spontaneous process.  | Current is sent through water which is a form of external energy which here is separating the water into the components of hydrogen and oxygen.  Since energy is required for this reaction, it is considered a non-spontaneous reaction.  |
 
 ***
@@ -53,7 +53,7 @@ Standard Enthalpy of Formation is this energy measured at standard conditions (P
 
 | Example Standard Enthalpy of Formation | Table of Some Standard Enthalpies of Formation | 
 | -- | -- |
-| <img src="Images/Gibbs_Free_Energy/Enthalpy_Of_Formation.png" width="400" height="400"> | <img src="Images/Gibbs_Free_Energy/Standard_Enthalpy_Of_Formation.png" width="400" height="400"> |
+| <img src="../Images/Gibbs_Free_Energy/Enthalpy_Of_Formation.png" width="400" height="400"> | <img src="../Images/Gibbs_Free_Energy/Standard_Enthalpy_Of_Formation.png" width="400" height="400"> |
 |  | [Standard Enthalpy of Formation](https://chem.libretexts.org/Bookshelves/General_Chemistry/ChemPRIME_(Moore_et_al.)/03%3A_Using_Chemical_Equations_in_Calculations/3.10%3A_Standard_Enthalpies_of_Formation) | 
 
 
