@@ -8,7 +8,7 @@ Gibbs Free Energy: Determines if a reaction will occur spontaneously (no externa
 
 | Spontaneous Reaction: Iron Oxide (Rust) | Nonspontaneous Reaction: Separating of water (Electrolysis) |
 | -- | -- |
-| <img src="Images/Gibbs_Free_Energy/Spontaneous_Reaction.jpg" width="400" height="400"> | <img src="Images/Gibbs_Free_Energy/Nonspontaneous_Reaction.png" width="400" height="400"> | 
+| <img src="../Images/Gibbs_Free_Energy/Spontaneous_Reaction.jpg" width="400" height="400"> | <img src="Images/Gibbs_Free_Energy/Nonspontaneous_Reaction.png" width="400" height="400"> | 
 | Water on iron interacts with oxygen to oxidize the iron and cause iron oxide or rust.  This process requires no external energy which makes it a spontaneous process.  | Current is sent through water which is a form of external energy which here is separating the water into the components of hydrogen and oxygen.  Since energy is required for this reaction, it is considered a non-spontaneous reaction.  |
 
 ***
