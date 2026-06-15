@@ -53,7 +53,7 @@ Standard Enthalpy of Formation is this energy measured at standard conditions (P
 
 | Example Standard Enthalpy of Formation | Table of Some Standard Enthalpies of Formation | 
 | -- | -- |
-| <img src="../Images/Gibbs_Free_Energy/Standard_Enthalpy_Of_Formation.png" width="600" height="400"> | <img src="../Images/Gibbs_Free_Energy/Standard_Enthalpy_Of_Formation.png" width="600" height="400"> |
+| <img src="../Images/Gibbs_Free_Energy/Enthalpy_Of_Formation.png" width="500" height="400"> | <img src="../Images/Gibbs_Free_Energy/Standard_Enthalpy_Of_Formation.png" width="500" height="400"> |
 |  | [Standard Enthalpy of Formation](https://webbook.nist.gov/chemistry/name-ser/) | 
 
 
