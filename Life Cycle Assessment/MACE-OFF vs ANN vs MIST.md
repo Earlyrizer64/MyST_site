@@ -1,4 +1,4 @@
-# Machine Learning and Gibbs Free Energy
+# MACE-OFF vs ANN vs MIST
 
 ***
 
