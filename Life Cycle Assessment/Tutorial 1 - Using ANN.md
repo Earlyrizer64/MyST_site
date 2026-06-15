@@ -2,7 +2,7 @@
 
 ***
 
-## In this tutorial you will learn how to use the created ANN to obtain thermodynamic properties that are included in the database.  
+## In this tutorial you will learn how to use the created ANN to Obtain Thermodynamic Properties that are included in the database.  
 
 ***
 
