@@ -11,6 +11,8 @@ project:
 
 site:
   template: book-theme
+  options:
+    navbar_open: true
   toc:
     - file: index.md
     - file: 06_MD_run_using_py.md
