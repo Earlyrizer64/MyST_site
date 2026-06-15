@@ -10,7 +10,9 @@
 
 This code will be calling to an excel document that contains currently a few hundred chemicals with property data including: Heat of vaporization, Heat Capacity, Boiling Point, Melting Point, Viscosity, Standard Formation Enthalpy, Critical Pressure and Temperature, and Critical Molar Volume.  With the code, you will be able to input a chemical name and Simplified Molecular Input Line Entry System (SMILES), the output will be some the property data listed above.  To suit a specific need, feel free to modify the code to display only certain properties or search for multiple chemicals at once.  
 
-### Test Writing
+***
+
+## Example Code to Obtain Properties
 
 Click the button below to open this code in Google Colab
 
