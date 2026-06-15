@@ -1,8 +1,8 @@
-# Tutorial 1 - Using an Artificial Neural Network (ANN) to Obtain Chemical Properties
+# Tutorial 1 - Using an Artificial Neural Network (ANN) to Obtain Thermodynamic Properties
 
 ***
 
-## In this tutorial you will learn how to use the created ANN to obtain chemical properties that are included in the database.  
+## In this tutorial you will learn how to use the created ANN to obtain thermodynamic properties that are included in the database.  
 
 ***
 
