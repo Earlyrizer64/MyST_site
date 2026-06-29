@@ -10,7 +10,9 @@ In this tutorial you will learn how to compute the heat capacity of a gas using 
 
 Heat capacity is the amount of energy it takes to raise the temperature of a specific substance by 1 degree Kelvin.  This code estimate this value using the idea that at constant pressure, the change in enthalp with respect to the change in temperature is equal to the heat capacity. 
 
-$ C{sub}`p` = frac{dH}{dT} $
+$$
+ C{sub}`p` = frac{dH}{dT} 
+$$
 
 From here we solve this derivative numerically instead of analytically, using a method called finite difference, which evaluates the derivative by finding the function values at temperatures that are close to the desired temperature and solving for the slope between the points.  
 
@@ -175,6 +177,7 @@ from mace.calculators import mace_off
 ```
 <details>
 <summary>Expected output</summary>
+
 ```text
 /usr/local/lib/python3.12/dist-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
   _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
