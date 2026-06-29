@@ -21,10 +21,10 @@ Outputs Should Appear Like This
 
 !pip install ASE
 !pip install mace-torch ase rdkit weas-widget
-
 ```
 <details>
 <summary>Expected output</summary>
+
 ```text
 
 Collecting ASE
@@ -220,8 +220,8 @@ Building wheels for collected packages: python-hostlist
 Successfully built python-hostlist
 Installing collected packages: python-hostlist, appdirs, rdkit, lmdb, lightning-utilities, jedi, configargparse, torchmetrics, torch-ema, opt-einsum-fx, matscipy, e3nn, mace-torch, weas-widget
 Successfully installed appdirs-1.4.4 configargparse-1.7.5 e3nn-0.4.4 jedi-0.20.0 lightning-utilities-0.15.3 lmdb-2.2.1 mace-torch-0.3.16 matscipy-1.2.0 opt-einsum-fx-0.1.4 python-hostlist-2.3.0 rdkit-2026.3.3 torch-ema-0.3 torchmetrics-1.9.0 weas-widget-0.2.6
-
 ```
+
 </details>
 
 
@@ -285,7 +285,7 @@ MACE-OFF loaded.
 
 
 ```
-# Cell 4: Calculate Methyl Nitrite (CH3ONO) Thermodynamic Properties
+# Cell 4: Calculate Methyl Nitrite (CH3ONO) Chemical Properties
 
 atoms_CH3ONO = molecule('CH3ONO') # Picks Molecule from g2 list (Quickly pick common molecules)
 atoms_CH3ONO.calc = calc_mol # Calls to MACE-OFF to be used
@@ -299,7 +299,7 @@ vib.run()
 vib_energies = vib.get_energies() # Gets vibrational energy based on molecule geometry
 vib_energies = np.array([e.real for e in vib_energies if e.real > 0.01]) # Filters out imaginary numbers and very low frequencies
 
-# Takes inputs of vibrational energies, potential energy, and geometry to compute thermodynamic properties
+# Takes inputs of vibrational energies, potential energy, and geometry to compute chemical properties
 thermo = IdealGasThermo(
     vib_energies=vib_energies,
     potentialenergy=potentialenergy_CH3ONO,
@@ -310,7 +310,7 @@ thermo = IdealGasThermo(
 )
 
 
-# Records Thermodynamic Property Data at 6 Temperatures at 1 atmosphere and Displays it
+# Records Chemical Property Data at 6 Temperatures at 1 atmosphere and Displays it
 temps = [298.15, 400, 500, 600, 700, 800]
 P = 101325.
 
@@ -342,7 +342,7 @@ T (K)	H (eV)	S (eV/K)	G (eV)
 
 
 ```
-# Cell 5: Calculate Methyl Nitrite (CH3ONO) Thermodynamic Properties without using g2 list
+# Cell 5: Calculate Methyl Nitrite (CH3ONO) Chemical Properties without using g2 list
 # Build the Molecule using SMILES
 
 smiles = 'CON=O' # SMILES for Methyl Nitrite (CH3ONO)
@@ -370,7 +370,7 @@ vib.run()
 vib_energies = vib.get_energies() # Gets vibrational energy based on molecule geometry
 vib_energies = np.array([e.real for e in vib_energies if e.real > 0.01]) # Filters out imaginary numbers and very low frequencies
 
-# Takes inputs of vibrational energies, potential energy, and geometry to compute thermodynamic properties
+# Takes inputs of vibrational energies, potential energy, and geometry to compute chemical properties
 thermo = IdealGasThermo(
     vib_energies=vib_energies,
     potentialenergy=potentialenergy_CH3ONO,
@@ -381,7 +381,7 @@ thermo = IdealGasThermo(
 )
 
 
-# Records Thermodynamic Property Data at 6 Temperatures at 1 atmosphere and Displays it
+# Records Chemical Property Data at 6 Temperatures at 1 atmosphere and Displays it
 temps = [298.15, 400, 500, 600, 700, 800]
 P = 101325.
 
@@ -399,6 +399,7 @@ display(df2)
 <summary>Expected output</summary>
 
 ```text
+
 T (K)	H (eV)	S (eV/K)	G (eV)
 0	298.15	-6669.877876	0.002949	-6670.757160
 1	400.00	-6669.803150	0.003164	-6671.068716
@@ -406,6 +407,7 @@ T (K)	H (eV)	S (eV/K)	G (eV)
 3	600.00	-6669.624145	0.003524	-6671.738591
 4	700.00	-6669.521014	0.003683	-6672.099041
 5	800.00	-6669.410517	0.003830	-6672.474791
+
 ```
 </details>
 
