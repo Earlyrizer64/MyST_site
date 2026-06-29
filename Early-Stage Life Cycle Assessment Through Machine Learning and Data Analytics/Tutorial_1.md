@@ -1,8 +1,8 @@
-# Tutorial 1: Chemical Property Estimation (Standard Enthalpy of Formation for gasses) through Machine Learning Potential (MACE-OFF)
+# Tutorial 1: Chemical Property Estimation (Standard Enthalpy of Formation for Gasses)
 
 ***
 
-## In this tutorial you will learn how to use ASE and MACE-OFF to get Chemical Properties of Atoms and Molecules
+### In this tutorial you will learn how to use ASE and MACE-OFF to get Chemical Properties of Atoms and Molecules using a Machine Learning Potential (MACE-OFF)
 
 ***
 
@@ -327,9 +327,11 @@ for T in temps:
 
 df1 = pd.DataFrame(records)
 display(df1)
+
 ```
 <details>
 <summary>Expected output</summary>
+
 ```text
 T (K)	H (eV)	S (eV/K)	G (eV)
 0	298.15	-6669.853239	0.002861	-6670.706377
@@ -338,7 +340,9 @@ T (K)	H (eV)	S (eV/K)	G (eV)
 3	600.00	-6669.600004	0.003434	-6671.660501
 4	700.00	-6669.496061	0.003594	-6672.012022
 5	800.00	-6669.384683	0.003743	-6672.378966
+
 ```
+
 </details>
 
 
@@ -453,6 +457,6 @@ T (K)	H (eV)	S (eV/K)	G (eV)
 ```
 </details>
 
-## Discussion / Analysis
+### Discussion / Analysis
 
 In this code, you were able to calculate the Enthalpy, Entropy, and Gibbs Free Energy of Methyl Nitrite using the g2 shortcut as well as explicitly defining the geometry and constructing the molecule.  When calculating the chemical properties, both yielded extremely similar answers.  
