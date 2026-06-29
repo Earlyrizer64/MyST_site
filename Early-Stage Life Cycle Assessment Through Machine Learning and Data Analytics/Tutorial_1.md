@@ -265,7 +265,9 @@ print("MACE-OFF loaded.")
 ```
 <details>
 <summary>Expected output</summary>
+
 ```text
+
 Loading MACE-OFF (medium model)...
 Downloading MACE model from 'https://raw.githubusercontent.com/ACEsuit/mace-off/main/mace_off23/MACE-OFF23_small.model'
 The model is distributed under the Academic Software License (ASL) license, see https://github.com/gabor1/ASL 
@@ -278,7 +280,9 @@ Using float64 for MACECalculator, which is slower but more accurate. Recommended
 /usr/local/lib/python3.12/dist-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
   torch.load(f=model_path, map_location=device)
 MACE-OFF loaded.
+
 ```
+
 </details>
 
 
