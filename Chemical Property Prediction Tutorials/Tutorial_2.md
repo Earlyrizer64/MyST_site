@@ -486,7 +486,7 @@ plt.show()
 <summary>Expected output</summary>
 ```text
 ```
-![Heat Capacity Plot](Reference_Files/Tutorial_2_Files/heat_capacity_CO2.png)
+<img src="Reference_Files/Tutorial_2_Files/heat_capacity_CO2.png"/>
 </details>
 
 
