@@ -10,9 +10,7 @@ In this tutorial you will learn how to compute the heat capacity of a gas using 
 
 Heat capacity is the amount of energy it takes to raise the temperature of a specific substance by 1 degree Kelvin.  This code estimate this value using the idea that at constant pressure, the change in enthalp with respect to the change in temperature is equal to the heat capacity. 
 
-$$
- C{sub}`p` = frac{dH}{dT} 
-$$
+$C_p = \frac{dH}{dT}$
 
 From here we solve this derivative numerically instead of analytically, using a method called finite difference, which evaluates the derivative by finding the function values at temperatures that are close to the desired temperature and solving for the slope between the points.  
 
@@ -251,6 +249,7 @@ rdkit_mol, formula, mol_weight = validate_smiles(SMILES)
 ```
 <details>
 <summary>Expected output</summary>
+
 ```text
 Validating molecule...
   SMILES   : O=C=O
@@ -295,6 +294,7 @@ print(f"Symbols: {atoms.get_chemical_symbols()}")
 ```
 <details>
 <summary>Expected output</summary>
+
 ```text
 3D structure generated: 3 atoms
 Symbols: ['O', 'C', 'O']
@@ -492,7 +492,7 @@ plt.show()
 <img src="Reference_Files/Tutorial_2_Files/heat_capacity_CO2.png"/>
 </details>
 
-
+<img src="Reference_Files/Tutorial_2_Files/heat_capacity_CO2.png"/>
 
 
 ```
