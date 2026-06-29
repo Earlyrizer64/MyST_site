@@ -1,4 +1,4 @@
-# o	Tutorial 1: Chemical Property Estimation (Standard Enthalpy of Formation for gasses) through Machine Learning Potential (MACE-OFF)
+# Tutorial 1: Chemical Property Estimation (Standard Enthalpy of Formation for gasses) through Machine Learning Potential (MACE-OFF)
 
 ***
 
