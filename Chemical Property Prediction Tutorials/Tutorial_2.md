@@ -493,7 +493,10 @@ plt.show()
 <summary>Expected output</summary>
 
 <img src="/Reference_Files/Tutorial_2_Files/heat_capacity_CO2.png"/>
+
 </details>
+
+
 
 
 ```
@@ -699,7 +702,9 @@ Vibrational frequencies (real modes):
   Cₚ =    29.12  J/(mol·K)
 =============================================
 ```
+
 <img src="/Reference_Files/Tutorial_2_Files/heat_capacity_CO.png"/>
+
 </details>
 
 
@@ -914,7 +919,9 @@ Vibrational frequencies (real modes):
   Cₚ =    41.32  J/(mol·K)
 =============================================
 ```
+
 <img src="/Reference_Files/Tutorial_2_Files/heat_capacity_H2O2.png"/>
+
 </details>
 
 
