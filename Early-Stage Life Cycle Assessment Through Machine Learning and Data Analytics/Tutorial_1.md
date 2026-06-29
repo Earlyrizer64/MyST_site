@@ -24,7 +24,10 @@ Outputs Should Appear Like This
 
 ```
 
-```
+<details>
+<summary>Expected output</summary>
+
+```text
 Collecting ASE
   Downloading ase-3.29.0-py3-none-any.whl.metadata (4.4 kB)
 Requirement already satisfied: numpy>=1.21.6 in /usr/local/lib/python3.12/dist-packages (from ASE) (2.0.2)
@@ -219,51 +222,5 @@ Successfully built python-hostlist
 Installing collected packages: python-hostlist, appdirs, rdkit, lmdb, lightning-utilities, jedi, configargparse, torchmetrics, torch-ema, opt-einsum-fx, matscipy, e3nn, mace-torch, weas-widget
 Successfully installed appdirs-1.4.4 configargparse-1.7.5 e3nn-0.4.4 jedi-0.20.0 lightning-utilities-0.15.3 lmdb-2.2.1 mace-torch-0.3.16 matscipy-1.2.0 opt-einsum-fx-0.1.4 python-hostlist-2.3.0 rdkit-2026.3.3 torch-ema-0.3 torchmetrics-1.9.0 weas-widget-0.2.6
 ```
-
-```
-# Cell 2: Import Required Libraries
-
-import numpy as np
-from ase.optimize import QuasiNewton
-from ase.thermochemistry import IdealGasThermo
-from ase.vibrations import Vibrations
-from ase.units import kJ, mol
-from ase import Atoms
-from ase.build import bulk, molecule
-import pandas as pd
-from mace.calculators import mace_mp, mace_off
-
-from rdkit import Chem
-from rdkit.Chem import AllChem
-```
-
-```
-/usr/local/lib/python3.12/dist-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
-  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
-cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
-
-```
-
-```
-# Cell 3: Load MACE-OFF
-
-print("Loading MACE-OFF (medium model)...")
-calc_mol = mace_off(model="small", default_dtype="float64")
-print("MACE-OFF loaded.")
-```
-
-```
-Loading MACE-OFF (medium model)...
-Downloading MACE model from 'https://raw.githubusercontent.com/ACEsuit/mace-off/main/mace_off23/MACE-OFF23_small.model'
-The model is distributed under the Academic Software License (ASL) license, see https://github.com/gabor1/ASL 
- To use the model you accept the terms of the license.
-ASL is based on the Gnu Public License, but does not permit commercial use
-Downloading: 100.0% (7.0 MB / 7.0 MB)
-Cached MACE model to /root/.cache/mace/MACE-OFF23_small.model
-Using MACE-OFF23 MODEL for MACECalculator with /root/.cache/mace/MACE-OFF23_small.model
-Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
-/usr/local/lib/python3.12/dist-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
-  torch.load(f=model_path, map_location=device)
-MACE-OFF loaded.
-```
+</details>
 
