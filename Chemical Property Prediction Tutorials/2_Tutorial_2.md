@@ -211,7 +211,7 @@ FMAX           = 0.01     # eV/Å optimisation threshold use between 0.01 and 0.
 <summary>Expected output</summary>
 
 ```text
-
+No Visible Output
 ```
 </details>
 
