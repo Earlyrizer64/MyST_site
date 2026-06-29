@@ -26,6 +26,7 @@ Outputs Should Appear Like This
 <details>
 <summary>Expected output</summary>
 ```text
+
 Collecting ASE
   Downloading ase-3.29.0-py3-none-any.whl.metadata (4.4 kB)
 Requirement already satisfied: numpy>=1.21.6 in /usr/local/lib/python3.12/dist-packages (from ASE) (2.0.2)
@@ -219,6 +220,7 @@ Building wheels for collected packages: python-hostlist
 Successfully built python-hostlist
 Installing collected packages: python-hostlist, appdirs, rdkit, lmdb, lightning-utilities, jedi, configargparse, torchmetrics, torch-ema, opt-einsum-fx, matscipy, e3nn, mace-torch, weas-widget
 Successfully installed appdirs-1.4.4 configargparse-1.7.5 e3nn-0.4.4 jedi-0.20.0 lightning-utilities-0.15.3 lmdb-2.2.1 mace-torch-0.3.16 matscipy-1.2.0 opt-einsum-fx-0.1.4 python-hostlist-2.3.0 rdkit-2026.3.3 torch-ema-0.3 torchmetrics-1.9.0 weas-widget-0.2.6
+
 ```
 </details>
 
