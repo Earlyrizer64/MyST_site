@@ -1,4 +1,4 @@
-# Tutorial 1 - Using an Artificial Neural Network (ANN) to Obtain Thermodynamic Properties
+# Tutorial 4: Chemical Property Estimation (Standard Enthalpy of Formation for gasses) through Database
 
 ***
 

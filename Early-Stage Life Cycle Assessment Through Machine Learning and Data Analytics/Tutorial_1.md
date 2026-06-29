@@ -1,4 +1,4 @@
-# Tutorial 2 - Using ASE and MACE-OFF to Obtain Thermodynamic Properties
+# o	Tutorial 1: Chemical Property Estimation (Standard Enthalpy of Formation for gasses) through Machine Learning Potential (MACE-OFF)
 
 ***
 
