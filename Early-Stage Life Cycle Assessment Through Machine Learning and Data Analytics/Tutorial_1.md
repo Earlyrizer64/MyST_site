@@ -325,7 +325,7 @@ display(df1)
 <details>
 <summary>Expected output</summary>
 ```text
-	T (K)	H (eV)	S (eV/K)	G (eV)
+T (K)	H (eV)	S (eV/K)	G (eV)
 0	298.15	-6669.853239	0.002861	-6670.706377
 1	400.00	-6669.779623	0.003073	-6671.008786
 2	500.00	-6669.695084	0.003261	-6671.325623
