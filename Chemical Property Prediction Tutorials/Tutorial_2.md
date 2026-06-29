@@ -1102,8 +1102,11 @@ Vibrational frequencies (real modes):
 =============================================
   Cₚ =    35.48  J/(mol·K)
 =============================================
+
 ```
+
 <img src="/Reference_Files/Tutorial_2_Files/heat_capacity_CH4.png"/>
+
 </details>
 
 
