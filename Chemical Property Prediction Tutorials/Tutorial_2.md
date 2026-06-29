@@ -10,7 +10,7 @@ In this tutorial you will learn how to compute the heat capacity of a gas using 
 
 Heat capacity is the amount of energy it takes to raise the temperature of a specific substance by 1 degree Kelvin.  This code estimate this value using the idea that at constant pressure, the change in enthalp with respect to the change in temperature is equal to the heat capacity. 
 
-$$ C{sub}`p` = frac{dH}{dT} $$
+$ C{sub}`p` = frac{dH}{dT} $
 
 From here we solve this derivative numerically instead of analytically, using a method called finite difference, which evaluates the derivative by finding the function values at temperatures that are close to the desired temperature and solving for the slope between the points.  
 
@@ -144,6 +144,7 @@ Downloading rdkit-2026.3.3-cp312-cp312-manylinux_2_28_x86_64.whl (37.2 MB)
 Installing collected packages: rdkit
 Successfully installed rdkit-2026.3.3
 ```
+
 </details>
 
 
@@ -484,8 +485,8 @@ plt.show()
 <details>
 <summary>Expected output</summary>
 ```text
-![Heat Capacity Plot](Reference_Files/Tutorial_2_Files/heat_capacity_CO2.png)
 ```
+![Heat Capacity Plot](Reference_Files/Tutorial_2_Files/heat_capacity_CO2.png)
 </details>
 
 
