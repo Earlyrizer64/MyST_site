@@ -2,4 +2,4 @@
 
 ## Life Cycle Assessment (LCA)
 
-<img src="Main_Page.png">
+<img src="/Reference_Files/Main_Page.png">
