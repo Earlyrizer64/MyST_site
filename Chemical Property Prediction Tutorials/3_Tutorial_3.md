@@ -1,4 +1,4 @@
-# Tutorial 3: Chemical Property Estimation (Heat Capacity for liquids) through Machine Learning Potential (MACE-OFF)
+# Tutorial 3: Chemical Property Estimation (Heat Capacity for Liquids)
 
 ***
 
