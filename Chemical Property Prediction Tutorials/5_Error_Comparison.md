@@ -2,7 +2,9 @@
 
 ***
 
-The Standard Enthalpy of Formation is the energy required to turn 1 mole of base elements in their natural state into 1 mole of the molecule you are computing this for.  When using MACE-OFF to get these values, you need to calculate the enthalpy of the desired molecule and subtrack the enthalpy of the same amount of atoms in their base elements in their natural state.  For example to compute the Standard Enthalpy of Formation for Water H{sub}`2`O, you would compute the enthalpy of a water molecule and subtract the base elements in their natural state (O{sub}`2` and H{sub}`2`).  The equation ends up being H{sub}`H{sub}`2`O` - FINISH EQUATION - .  
+The Standard Enthalpy of Formation is the energy required to turn 1 mole of base elements in their natural state into 1 mole of the molecule you are computing this for.  When using MACE-OFF to get these values, you need to calculate the enthalpy of the desired molecule and subtrack the enthalpy of the same amount of atoms in their base elements in their natural state.  For example to compute the Standard Enthalpy of Formation for water (H{sub}`2`O), you would compute the enthalpy of a water molecule and subtract the base elements in their natural state (O{sub}`2` and H{sub}`2`).  The equation ends up being: 
+
+H(H{sub}`2`O) - H(H{sub}`2`) - $$ \frac{1}{2} $$ H(O{sub}`2`) 
 
 ***
 
