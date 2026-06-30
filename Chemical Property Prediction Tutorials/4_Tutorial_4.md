@@ -14,7 +14,7 @@ This code will be calling to an excel document that contains currently a few hun
 Click the button below to open this code in Google Colab
 
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Earlyrizer64/MyST_site/blob/main/Reference_Files/Google_Colab_Files/Tutorial_1_Using_an_Artificial_Neural_Network_(ANN)_to_Obtain_Chemical_Properties.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Earlyrizer64/MyST_site/blob/main/Reference_Files/Google_Colab_Files/Tutorial_4.ipynb)
 
 
 ### Outputs Should Appear Like This: 
@@ -40,7 +40,7 @@ No Visible Output
 ```
 # Cell 2: Define Location of Database (Located in Github Repository)
 
-DATABASE_PATH = "https://raw.githubusercontent.com/Earlyrizer64/MyST_site/main/Reference_Files/Chemical_Property_Database/Processed_Solvent_DF_v6.xlsx.xlsx"
+DATABASE_PATH = "https://raw.githubusercontent.com/Earlyrizer64/MyST_site/main/Reference_Files/Chemical_Property_Database/Processed_Solvent_DF_v6_TEST.xlsx"
 df = pd.read_excel(DATABASE_PATH)
 ```
 <details>

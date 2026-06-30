@@ -15,7 +15,7 @@ This code will Chemical Properties of Methyl Nitrite using 2 methods.  The first
 Click the button below to open this code in Google Colab
 
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Earlyrizer64/MyST_site/blob/main/Reference_Files/Google_Colab_Files/Tutorial_2_Using_ASE_and_MACE_OFF.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Earlyrizer64/MyST_site/blob/main/Reference_Files/Google_Colab_Files/Tutorial_1.ipynb)
 
 
 ### Outputs Should Appear Like This: 
