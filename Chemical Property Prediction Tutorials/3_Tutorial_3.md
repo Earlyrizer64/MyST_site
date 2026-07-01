@@ -2,7 +2,7 @@
 
 ***
 
-In this tutorial you will learn how to use the Database to Obtain Chemical Properties that are included in the database.  
+In this tutorial you will learn how to Obtain Chemical Properties that are included in the Database.  
 
 ***
 
@@ -164,4 +164,4 @@ Name: CCCO, dtype: object
 
 ### Discussion / Analysis
 
-In this code, you call to an excel sheet which holds a few hundred chemicals and their properties.  You are also given an outline which you can modify to get any property from any chemical listed in the database that will help you with your need.  
+In this code, you call to an excel sheet which holds a few hundred chemicals and their properties.  You are also given an outline which you can modify to get any property from any chemical listed in the database.   
