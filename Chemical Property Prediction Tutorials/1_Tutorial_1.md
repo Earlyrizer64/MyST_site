@@ -1,4 +1,4 @@
-# Tutorial 1: Chemical Property Estimation (Standard Enthalpy of Formation for Gasses)
+# Tutorial 1: Chemical Property Estimation (Enthalpy, Entropy, and Gibbs Free Energy for Gases)
 
 ***
 

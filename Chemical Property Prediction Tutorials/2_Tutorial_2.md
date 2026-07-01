@@ -1,4 +1,4 @@
-# Tutorial 2: Chemical Property Estimation (Heat Capacity for Gasses)
+# Tutorial 2: Chemical Property Estimation (Heat Capacity for Gases)
 
 ***
 
@@ -574,7 +574,7 @@ Temperature in [K]	Cp [J/mol*K]	Percent Error in [%]
 
 
 ```
-# Cell 11: This will compute the same information for a different gas (Carbon Monoxide) - Remember to change SMILES, symmetry number, and spin number when changing gasses
+# Cell 11: This will compute the same information for a different gas (Carbon Monoxide) - Remember to change SMILES, symmetry number, and spin number when changing gases
 
 # You can also change reference Temp (TEMPERATURE_K) to see Cp at different temperatures
 
@@ -786,7 +786,7 @@ Temperature in [K]	Cp [J/mol*K]	Percent Error in [%]
 
 
 ```
-# Cell 13: This will compute the same information for a different gas (Hydrogen Peroxide) - Remember to change SMILES, symmetry number, and spin number when changing gasses
+# Cell 13: This will compute the same information for a different gas (Hydrogen Peroxide) - Remember to change SMILES, symmetry number, and spin number when changing gases
 
 # You can also change reference Temp (TEMPERATURE_K) to see Cp at different temperatures
 
@@ -974,7 +974,7 @@ display(df)
 
 
 ```
-# Cell 15: This will compute the same information for a different gas (Methane) - Remember to change SMILES, symmetry number, and spin number when changing gasses
+# Cell 15: This will compute the same information for a different gas (Methane) - Remember to change SMILES, symmetry number, and spin number when changing gases
 
 # You can also change reference Temp (TEMPERATURE_K) to see Cp at different temperatures
 
