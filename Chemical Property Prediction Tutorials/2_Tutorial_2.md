@@ -8,7 +8,7 @@ In this tutorial you will learn how to compute the heat capacity of a gas using 
 
 ### Background Information: 
 
-Heat capacity is the amount of energy it takes to raise the temperature of a specific substance by 1 degree Kelvin.  This code estimate this value using the idea that at constant pressure, the change in enthalp with respect to the change in temperature is equal to the heat capacity. 
+Heat capacity is the amount of energy it takes to raise the temperature of a specific substance by 1 degree Kelvin.  This code estimate this value using the idea that at constant pressure, the change in enthalpy with respect to the change in temperature is equal to the heat capacity. 
 
 
 $$
