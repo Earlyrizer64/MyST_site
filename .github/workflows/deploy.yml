@@ -43,6 +43,10 @@ jobs:
      # - name: Copy static files
      #   run: cp lj_widget.html _build/html/
 
+      - name: Inject GoatCounter analytics
+        shell: "bash -l {0}"
+        run: python inject_analytics.py
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
